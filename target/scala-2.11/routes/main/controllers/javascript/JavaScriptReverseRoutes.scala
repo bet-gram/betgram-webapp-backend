@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/Meili/Documents/Betgram/betgram-webapp-backend/conf/routes
-// @DATE:Thu Nov 05 14:04:18 COT 2015
+// @DATE:Thu Nov 05 16:07:18 COT 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:22
+  // @LINE:38
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:22
+    // @LINE:38
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -83,12 +83,56 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:28
+    def getManagers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getManagers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "managers"})
+        }
+      """
+    )
+  
     // @LINE:18
     def addUser: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addUser",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "user"})
+        }
+      """
+    )
+  
+    // @LINE:29
+    def getPayments: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPayments",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "payments"})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def getClubs: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getClubs",
+      """
+        function() {
+        
+          if (true) {
+            return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "clubs"})
+          }
+        
+        }
+      """
+    )
+  
+    // @LINE:22
+    def getBlogs: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getBlogs",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "blogs"})
         }
       """
     )
@@ -113,12 +157,62 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:33
+    def getPlayers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPlayers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "players"})
+        }
+      """
+    )
+  
     // @LINE:17
     def addSubscription: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addSubscription",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "subscription"})
+        }
+      """
+    )
+  
+    // @LINE:32
+    def getUsers: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getUsers",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "users"})
+        }
+      """
+    )
+  
+    // @LINE:30
+    def getPositions: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getPositions",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "positions"})
+        }
+      """
+    )
+  
+    // @LINE:25
+    def getCountries: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCountries",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "countries"})
+        }
+      """
+    )
+  
+    // @LINE:31
+    def getSubscriptions: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getSubscriptions",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "subscriptions"})
         }
       """
     )
@@ -133,6 +227,26 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:24
+    def getConfederations: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getConfederations",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "confederations"})
+        }
+      """
+    )
+  
+    // @LINE:19
+    def addPlayer: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.addPlayer",
+      """
+        function() {
+          return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "player"})
+        }
+      """
+    )
+  
     // @LINE:10
     def addConfederation: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addConfederation",
@@ -143,12 +257,32 @@ package controllers.javascript {
       """
     )
   
+    // @LINE:23
+    def getCities: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getCities",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "cities"})
+        }
+      """
+    )
+  
     // @LINE:11
     def addCountry: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Application.addCountry",
       """
         function() {
           return _wA({method:"POST", url:"""" + _prefix + { _defaultPrefix } + """" + "country"})
+        }
+      """
+    )
+  
+    // @LINE:26
+    def getGrounds: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.getGrounds",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "grounds"})
         }
       """
     )

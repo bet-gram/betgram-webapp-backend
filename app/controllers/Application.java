@@ -9,12 +9,16 @@ import play.mvc.*;
 
 import views.html.*;
 
+import java.util.List;
+
 public class Application extends Controller {
 
     public Result index() {
 
         return ok(index.render("Your new application is ready."));
     }
+
+    //POST
 
     public Result post(Model model){
         model.save();
@@ -84,5 +88,72 @@ public class Application extends Controller {
     public  Result addUser() {
         User object = Form.form(User.class).bindFromRequest().get();
         return post(object);
+    }
+
+    //GET
+
+    public Result getBlogs(){
+        List<Blog> objects = new Model.Finder(String.class, Blog.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getCities(){
+        List<City> objects = new Model.Finder(String.class, City.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getClubs(){
+        List<Club> objects = new Model.Finder(String.class, Club.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getConfederations(){
+        List<Confederation> objects = new Model.Finder(String.class, Confederation.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getCountries(){
+        List<Country> objects = new Model.Finder(String.class, Country.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getGrounds(){
+        List<Ground> objects = new Model.Finder(String.class, Ground.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getLeagues(){
+        List<League> objects = new Model.Finder(String.class, League.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getManagers(){
+        List<Manager> objects = new Model.Finder(String.class, Manager.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getPayments(){
+        List<Payment> objects = new Model.Finder(String.class, Payment.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getPositions(){
+        List<Position> objects = new Model.Finder(String.class, Position.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getSubscriptions(){
+        List<Subscription> objects = new Model.Finder(String.class, Subscription.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getUsers(){
+        List<User> objects = new Model.Finder(String.class, User.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+    public Result getPlayers(){
+        List<Player> objects = new Model.Finder(String.class, Player.class).all();
+        return ok(Json.toJson(objects));
     }
 }

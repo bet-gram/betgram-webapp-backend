@@ -16,6 +16,22 @@ POST    /payment                    controllers.Application.addPayment()
 POST    /position                   controllers.Application.addPosition()
 POST    /subscription               controllers.Application.addSubscription()
 POST    /user                       controllers.Application.addUser()
+POST    /player                     controllers.Application.addPlayer()
+
+GET     /clubs                      controllers.Application.getClubs()
+GET     /blogs                      controllers.Application.getBlogs()
+GET     /cities                     controllers.Application.getCities()
+GET     /confederations             controllers.Application.getConfederations()
+GET     /countries                  controllers.Application.getCountries()
+GET     /grounds                    controllers.Application.getGrounds()
+GET     /leagues                    controllers.Application.getClubs()
+GET     /managers                   controllers.Application.getManagers()
+GET     /payments                   controllers.Application.getPayments()
+GET     /positions                  controllers.Application.getPositions()
+GET     /subscriptions              controllers.Application.getSubscriptions()
+GET     /users                      controllers.Application.getUsers()
+GET     /players                    controllers.Application.getPlayers()
+
 
 
 # Map static resources from the /public folder to the /assets URL path
