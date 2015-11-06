@@ -3,37 +3,44 @@ package models;
 import com.avaje.ebean.Model;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 
 /**
  * Created by Meili on 5/11/15.
  */
-public class Confederation extends Model{
-	
+@Entity
+public class Confederation extends Model {
+
+	@Id
+	private Long Id;
+
 	/**
 	 * country
 	 */
 	private Country country;
-	
+
 	/**
 	 * name
 	 */
 	private String name;
-	
+
 	/**
 	 * founded
 	 */
 	private Date founded;
-	
+
 	/**
 	 * currentChampion
 	 */
 	private Club currentChampion;
-	
+
 	/**
 	 * mostChampionships
 	 */
 	private Club mostChampionships;
-	
+
 	/**
 	 * website
 	 */
@@ -48,7 +55,7 @@ public class Confederation extends Model{
 	 * @param website
 	 */
 	public Confederation(Country country, String name, Date founded, Club currentChampion, Club mostChampionships,
-			String website) {
+						 String website) {
 		this.country = country;
 		this.name = name;
 		this.founded = founded;
@@ -140,7 +147,10 @@ public class Confederation extends Model{
 	public void setWebsite(String website) {
 		this.website = website;
 	}
-	
-	
+
+
+	public static Finder<Long, Confederation> find = new Finder<Long, Confederation>(
+			Long.class, Confederation.class
+	);
 
 }

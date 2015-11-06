@@ -1,7 +1,6 @@
 package controllers;
 
 import com.avaje.ebean.Model;
-import com.fasterxml.jackson.databind.JsonNode;
 import models.*;
 import play.data.Form;
 import play.libs.Json;
@@ -90,6 +89,11 @@ public class Application extends Controller {
         return post(object);
     }
 
+    public  Result addStatistic() {
+        Statistic object = Form.form(Statistic.class).bindFromRequest().get();
+        return post(object);
+    }
+
     //GET
 
     public Result getBlogs(){
@@ -156,4 +160,81 @@ public class Application extends Controller {
         List<Player> objects = new Model.Finder(String.class, Player.class).all();
         return ok(Json.toJson(objects));
     }
+
+    public Result getStatistics(){
+        List<Statistic> objects = new Model.Finder(String.class, Statistic.class).all();
+        return ok(Json.toJson(objects));
+    }
+
+
+    public Result getBlogId(Long id){
+        Blog object = Blog.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getCityId(Long id){
+        City object = City.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getClubId(Long id){
+        Club object = Club.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getConfederationId(Long id){
+        Confederation object = Confederation.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getCountryId(Long id){
+        Country object = Country.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getGroundId(Long id){
+        Ground object = Ground.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getLeagueId(Long id){
+        League object = League.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getManagerId(Long id){
+        Manager object = (Manager) Human.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getPaymentId(Long id){
+        Payment object = Payment.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getPositionId(Long id){
+        Position object = Position.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getSubscriptionId(Long id){
+        Subscription object = Subscription.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getUserId(Long id){
+        User object = User.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getPlayerId(Long id){
+        Player object = (Player) Human.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
+    public Result getStatisticId(Long id){
+        Statistic object = Statistic.find.byId(id);
+        return ok(Json.toJson(object));
+    }
+
 }

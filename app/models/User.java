@@ -1,62 +1,72 @@
 package models;
 
 
+
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import play.data.format.Formats;
 
 import java.util.ArrayList;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
+@Entity
 public class User extends Model {
+
+	@Id
+	private Long Id;
 
 	/**
 	 * username
 	 */
 	private String username;
-	
+
 	/**
 	 * password
 	 */
 	private String password;
-	
+
 	/**
 	 * firstName
 	 */
 	private String firstName;
-	
+
 	/**
 	 * lastName
 	 */
 	private String lastName;
-	
+
 	/**
 	 * email
 	 */
 	private String email;
-	
+
 	/**
 	 * dateOfBirth
 	 */
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-YY")
 	private Date dateOfBirth;
-	
+
 	/**
 	 * Country
 	 */
 	private String country;
-	
+
 	/**
 	 * City
 	 */
 	private String city;
-	
+
 	/**
 	 * subscriptions
 	 */
 	private ArrayList<Subscription> subscriptions;
 
 	/**
-	 * 
 	 * @param username
 	 * @param password
 	 * @param firstName
@@ -66,10 +76,10 @@ public class User extends Model {
 	 * @param country
 	 * @param city
 	 */
-	public User(String username, String password, String firstName,
-			String lastName, String email, Date dateOfBirth, String country,
-			String city) {
-		super();
+	public User(Long id, String username, String password, String firstName,
+				String lastName, String email, Date dateOfBirth, String country,
+				String city) {
+		this.Id = id;
 		this.username = username;
 		this.password = password;
 		this.firstName = firstName;
@@ -143,22 +153,20 @@ public class User extends Model {
 	public ArrayList<Subscription> getSubscriptions() {
 		return subscriptions;
 	}
-	
+
 	/**
-	 * 
 	 * @param subscription
 	 * @return
 	 */
-	public boolean addSubscription(Subscription subscription){
+	public boolean addSubscription(Subscription subscription) {
 		return subscriptions.add(subscription);
 	}
-	
+
 	/**
-	 * 
 	 * @param subscription
 	 * @return
 	 */
-	public boolean removeSubscription(Subscription subscription){
+	public boolean removeSubscription(Subscription subscription) {
 		return subscriptions.remove(subscription);
 	}
 
@@ -224,5 +232,10 @@ public class User extends Model {
 	public void setSubscriptions(ArrayList<Subscription> subscriptions) {
 		this.subscriptions = subscriptions;
 	}
-	
+
+	public static Finder<Long, User> find = new Finder<Long, User>(
+			Long.class, User.class
+	);
+
+
 }

@@ -4,16 +4,19 @@ package models;
 import com.avaje.ebean.Model;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class Manager extends Human{
-	
+public class Manager extends Human {
+
 	/**
 	 * currentClub
 	 */
 	private Club currentClub;
-	
+
 	/**
 	 * height
 	 */
@@ -26,8 +29,8 @@ public class Manager extends Human{
 	 * @param currentClub
 	 * @param height
 	 */
-	public Manager(String name, Date dateOfBirth, City placeOfBirth, Club currentClub, Double height) {
-		super(name, dateOfBirth, placeOfBirth);
+	public Manager(Long id, String name, Date dateOfBirth, City placeOfBirth, Club currentClub, Double height) {
+		super(id, name, dateOfBirth, placeOfBirth);
 		this.currentClub = currentClub;
 		this.height = height;
 	}
@@ -59,7 +62,6 @@ public class Manager extends Human{
 	public void setHeight(Double height) {
 		this.height = height;
 	}
-	
-	
+
 
 }

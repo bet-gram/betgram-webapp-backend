@@ -2,15 +2,23 @@ package models;
 
 import com.avaje.ebean.Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class City extends Model{
+@Entity
+public class City extends Model {
+
+	@Id
+	private Long Id;
 
 	private String name;
-	
+
 	private Country country;
-	
+
 	private String website;
 
 	/**
@@ -65,7 +73,10 @@ public class City extends Model{
 	public void setWebsite(String website) {
 		this.website = website;
 	}
-	
-	
-	
+
+
+	public static Finder<Long, City> find = new Finder<Long, City>(
+			Long.class, City.class
+	);
+
 }

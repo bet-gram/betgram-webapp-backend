@@ -3,21 +3,28 @@ package models;
 import com.avaje.ebean.Model;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class Human extends Model{
-	
+@Entity
+public class Human extends Model {
+
+	@Id
+	private Long Id;
+
 	/**
 	 * name
 	 */
 	private String name;
-	
+
 	/**
 	 * dateOfBirth
 	 */
 	private Date dateOfBirth;
-	
+
 	/**
 	 * placeOfBirth
 	 */
@@ -28,7 +35,8 @@ public class Human extends Model{
 	 * @param dateOfBirth
 	 * @param placeOfBirth
 	 */
-	public Human(String name, Date dateOfBirth, City placeOfBirth) {
+	public Human(Long id, String name, Date dateOfBirth, City placeOfBirth) {
+		this.Id = id;
 		this.name = name;
 		this.dateOfBirth = dateOfBirth;
 		this.placeOfBirth = placeOfBirth;
@@ -76,5 +84,8 @@ public class Human extends Model{
 		this.placeOfBirth = placeOfBirth;
 	}
 
-	
+
+	public static Finder<Long, Human> find = new Finder<Long, Human>(
+			Long.class, Human.class
+	);
 }

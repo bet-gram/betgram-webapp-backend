@@ -14,63 +14,63 @@ import java.util.Date;
 public class Club extends Model {
 
 	@Id
-	private String Id;
-	
+	private Long Id;
+
 	/**
 	 * fullName
 	 */
 	private String fullName;
-	
+
 	/**
 	 * city
 	 */
 	private City city;
-	
+
 	/**
 	 * country
 	 */
 	private Country country;
-	
+
 	/**
 	 * nickname
 	 */
 	private ArrayList<String> nicknames;
-	
+
 	/**
 	 * shortname
 	 */
 	private ArrayList<String> shortnames;
-	
+
 	/**
 	 * founded
 	 */
 	private Date founded;
-	
+
 	/**
 	 * ground
 	 */
 	private Ground ground;
-	
+
 	/**
 	 * owner
 	 */
 	private String owner;
-	
+
 	/**
 	 * chairman
 	 */
 	private Human chairman;
-	
+
 	/**
 	 * manager
 	 */
-	private Manager manager; 
-	
+	private Manager manager;
+
 	/**
 	 * league
 	 */
 	private League league;
-	
+
 	/**
 	 * website
 	 */
@@ -89,7 +89,7 @@ public class Club extends Model {
 	 * @param website
 	 */
 	public Club(String fullName, City city, Country country, Date founded, Ground ground, String owner, Human chairman,
-			Manager manager, League league, String website) {
+				Manager manager, League league, String website) {
 		this.fullName = fullName;
 		this.city = city;
 		this.country = country;
@@ -131,7 +131,7 @@ public class Club extends Model {
 	public ArrayList<String> getNickname() {
 		return nicknames;
 	}
-	
+
 	/**
 	 * @return true if is added, false otherwise
 	 */
@@ -145,21 +145,21 @@ public class Club extends Model {
 	public boolean removeNockname(String nNickname) {
 		return nicknames.remove(nNickname);
 	}
-	
+
 	/**
 	 * @return the shortname
 	 */
 	public ArrayList<String> getShortname() {
 		return shortnames;
 	}
-	
+
 	/**
 	 * @return true if is added, false otherwise
 	 */
 	public boolean addShortname(String nShortname) {
 		return shortnames.add(nShortname);
 	}
-	
+
 	/**
 	 * @return true if is removed, false otherwise
 	 */
@@ -299,7 +299,10 @@ public class Club extends Model {
 	public void setWebsite(String website) {
 		this.website = website;
 	}
-	
-	
+
+
+	public static Finder<Long, Club> find = new Finder<Long, Club>(
+			Long.class, Club.class
+	);
 
 }

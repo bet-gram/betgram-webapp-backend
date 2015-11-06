@@ -3,41 +3,48 @@ package models;
 import com.avaje.ebean.Model;
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class Ground extends Model{
-	
+@Entity
+public class Ground extends Model {
+
+	@Id
+	private Long Id;
+
 	/**
 	 * name
 	 */
 	private String name;
-	
+
 	/**
 	 * city
 	 */
 	private City city;
-	
+
 	/**
 	 * owner
 	 */
 	private Club owner;
-	
+
 	/**
 	 * operator
 	 */
 	private Club operator;
-	
+
 	/**
 	 * capacity
 	 */
 	private int capacity;
-	
+
 	/**
 	 * recordAttendance
 	 */
 	private int recordAttendance;
-	
+
 	/**
 	 * opened
 	 */
@@ -160,5 +167,8 @@ public class Ground extends Model{
 		this.opened = opened;
 	}
 
-	
+
+	public static Finder<Long, Ground> find = new Finder<Long, Ground>(
+			Long.class, Ground.class
+	);
 }

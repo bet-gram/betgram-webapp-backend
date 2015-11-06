@@ -1,22 +1,29 @@
 package models;
 
 import com.avaje.ebean.Model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
+@Entity
+public class Country extends Model {
 
-public class Country extends Model{
-	
+	@Id
+	private Long Id;
+
 	/**
 	 * name
 	 */
 	private String name;
-	
+
 	/**
 	 * nationalLanguage
 	 */
 	private String nationalLanguage;
-	
+
 	/**
 	 * currency
 	 */
@@ -75,6 +82,9 @@ public class Country extends Model{
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	
-	
+
+	public static Finder<Long, Country> find = new Finder<Long, Country>(
+			Long.class, Country.class
+	);
+
 }

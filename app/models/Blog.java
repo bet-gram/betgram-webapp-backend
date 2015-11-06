@@ -9,8 +9,13 @@ import javax.persistence.Id;
  * Created by Meili on 5/11/15.
  */
 @Entity
-public class Blog extends Model{
+public class Blog extends Model {
 
     @Id
-    private String Id;
+    private Long Id;
+
+
+    public static Finder<Long, Blog> find = new Finder<Long, Blog>(
+            Long.class, Blog.class
+    );
 }

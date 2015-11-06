@@ -4,51 +4,58 @@ import com.avaje.ebean.Model;
 
 import java.util.ArrayList;
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class League extends Model{
-	
+@Entity
+public class League extends Model {
+
+	@Id
+	private Long Id;
+
 	/**
 	 * country
 	 */
 	private Country country;
-	
+
 	/**
 	 * confederation
 	 */
 	private Confederation confederation;
-	
+
 	/**
 	 * founded
 	 */
 	private Date founded;
-	
+
 	/**
 	 * name
 	 */
 	private String name;
-	
+
 	/**
 	 * clubs
 	 */
 	private ArrayList<Club> clubs;
-	
+
 	/**
 	 * currentChampion
 	 */
 	private Club currentChampion;
-	
+
 	/**
 	 * mostChampionships
 	 */
 	private Club mostChampionships;
-	
+
 	/**
 	 * website
 	 */
 	private String website;
-	
+
 
 	/**
 	 * @param country
@@ -61,7 +68,7 @@ public class League extends Model{
 	 * @param website
 	 */
 	public League(Country country, Confederation confederation, Date founded, String name, ArrayList<Club> clubs,
-			Club currentChampion, Club mostChampionships, String website) {
+				  Club currentChampion, Club mostChampionships, String website) {
 		this.country = country;
 		this.confederation = confederation;
 		this.founded = founded;
@@ -131,22 +138,24 @@ public class League extends Model{
 
 	/**
 	 * Add a club
+	 *
 	 * @param club
 	 * @return
 	 */
-	public boolean addClub(Club club){
+	public boolean addClub(Club club) {
 		return clubs.add(club);
 	}
-	
+
 	/**
 	 * Remove a club
+	 *
 	 * @param club
 	 * @return
 	 */
-	public boolean removeClub(Club club){
+	public boolean removeClub(Club club) {
 		return clubs.remove(club);
 	}
-	
+
 	/**
 	 * @param country the country to set
 	 */
@@ -203,5 +212,8 @@ public class League extends Model{
 		this.website = website;
 	}
 
-	
+
+	public static Finder<Long, League> find = new Finder<Long, League>(
+			Long.class, League.class
+	);
 }

@@ -2,26 +2,30 @@ package models;
 
 
 import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by Meili on 5/11/15.
  */
-public class Player extends Human{
+public class Player extends Human {
+
 
 	/**
 	 * currentClub
 	 */
 	private Club currentClub;
-	
+
 	/**
 	 * number
 	 */
 	private int number;
-	
+
 	/**
 	 * height
 	 */
 	private Double height;
-	
+
 	/**
 	 * playingPosition
 	 */
@@ -36,9 +40,9 @@ public class Player extends Human{
 	 * @param height
 	 * @param playingPosition
 	 */
-	public Player(String name, Date dateOfBirth, City placeOfBirth, Club currentClub, int number, Double height,
-			Position playingPosition) {
-		super(name, dateOfBirth, placeOfBirth);
+	public Player(Long id, String name, Date dateOfBirth, City placeOfBirth, Club currentClub, int number, Double height,
+				  Position playingPosition) {
+		super(id, name, dateOfBirth, placeOfBirth);
 		this.currentClub = currentClub;
 		this.number = number;
 		this.height = height;
@@ -100,6 +104,6 @@ public class Player extends Human{
 	public void setPlayingPosition(Position playingPosition) {
 		this.playingPosition = playingPosition;
 	}
-	
-	
+
+
 }
