@@ -4,7 +4,7 @@
 		module="betgram$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151105123912"
+		publication="20151107151706"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

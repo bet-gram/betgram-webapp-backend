@@ -4068,9 +4068,9 @@
 [debug] 	[NOT REQUIRED] asm#asm;3.1!asm.jar
 [debug] 	[NOT REQUIRED] jfree#jcommon;1.0.12!jcommon.jar
 [debug] 	[NOT REQUIRED] jfree#jfreechart;1.0.8a!jfreechart.jar
-[debug] :: resolution report :: resolve 2570ms :: artifacts dl 48ms
-[debug] 	report for betgram#betgram$sbt_2.11;1.0-SNAPSHOT default produced in /Users/Meili/Documents/Betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sbt_2.11-default.xml
-[debug] 	resolve done (2570ms resolve - 48ms download)
+[debug] :: resolution report :: resolve 1530ms :: artifacts dl 43ms
+[debug] 	report for betgram#betgram$sbt_2.11;1.0-SNAPSHOT default produced in /Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sbt_2.11-default.xml
+[debug] 	resolve done (1530ms resolve - 43ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: betgram#betgram$sources_2.11;1.0-SNAPSHOT
 [debug] 	confs: [default]
@@ -5246,38 +5246,11 @@
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-rjs;1.0.7!sbt-rjs.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-digest;1.1.0!sbt-digest.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-mocha;1.1.0!sbt-mocha.jar(src)
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar
-[info] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar ...
-[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar
-[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar.sha1
-[debug] sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-play-ebean/scala_2.10/sbt_0.13/1.0.0/srcs/sbt-play-ebean-sources.jar
-[info] 	[SUCCESSFUL ] com.typesafe.sbt#sbt-play-ebean;1.0.0!sbt-play-ebean.jar(src) (2191ms)
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/srcs/avaje-ebeanorm-agent-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/srcs/avaje-ebeanorm-agent-sources.jar
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/srcs/avaje-ebeanorm-agent-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/srcs/avaje-ebeanorm-agent-sources.jar
-[debug] 		tried /Users/Meili/.ivy2/local/org.avaje.ebeanorm/avaje-ebeanorm-agent/4.5.3/srcs/avaje-ebeanorm-agent-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3-sources.jar
-[info] downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/org/avaje/ebeanorm/avaje-ebeanorm-agent/4.5.3/avaje-ebeanorm-agent-4.5.3-sources.jar
-[info] 	[SUCCESSFUL ] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.jar(src) (1470ms)
-[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/javax.persistence/persistence-api/1.0/srcs/persistence-api-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/javax.persistence/persistence-api/1.0/srcs/persistence-api-sources.jar
-[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/javax.persistence/persistence-api/1.0/srcs/persistence-api-sources.jar
-[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/javax.persistence/persistence-api/1.0/srcs/persistence-api-sources.jar
-[debug] 		tried /Users/Meili/.ivy2/local/javax.persistence/persistence-api/1.0/srcs/persistence-api-sources.jar
-[debug] 		tried https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar
-[info] downloading https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar ...
-[debug] 	public: downloading https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar
-[debug] 	public: downloading https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar.sha1
-[debug] sha1 OK for https://repo1.maven.org/maven2/javax/persistence/persistence-api/1.0/persistence-api-1.0-sources.jar
-[info] 	[SUCCESSFUL ] javax.persistence#persistence-api;1.0!persistence-api.jar(src) (1471ms)
+[debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-play-ebean;1.0.0!sbt-play-ebean.jar(src)
+[debug] 	[NOT REQUIRED] org.avaje.ebeanorm#avaje-ebeanorm-agent;4.5.3!avaje-ebeanorm-agent.jar(src)
+[debug] 	[NOT REQUIRED] javax.persistence#persistence-api;1.0!persistence-api.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.1.0!play-enhancer.jar(src)
-[debug] :: resolution report :: resolve 1108ms :: artifacts dl 7974ms
-[debug] 	report for betgram#betgram$sources_2.11;1.0-SNAPSHOT default produced in /Users/Meili/Documents/Betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sources_2.11-default.xml
-[debug] 	resolve done (1108ms resolve - 7974ms download)
+[debug] :: resolution report :: resolve 568ms :: artifacts dl 33ms
+[debug] 	report for betgram#betgram$sources_2.11;1.0-SNAPSHOT default produced in /Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sources_2.11-default.xml
+[debug] 	resolve done (568ms resolve - 33ms download)
