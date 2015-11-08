@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
-// @SOURCE:/Users/Meili/Documents/Betgram/betgram-webapp-backend/conf/routes
-// @DATE:Thu Nov 05 23:17:58 COT 2015
+// @SOURCE:/Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/conf/routes
+// @DATE:Sat Nov 07 15:36:16 COT 2015
 
 
 package router {

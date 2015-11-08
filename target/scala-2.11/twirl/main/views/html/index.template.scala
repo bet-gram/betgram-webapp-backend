@@ -54,8 +54,8 @@ Seq[Any](format.raw/*1.19*/("""
 object index extends index_Scope0.index
               /*
                   -- GENERATED --
-                  DATE: Thu Nov 05 14:04:19 COT 2015
-                  SOURCE: /Users/Meili/Documents/Betgram/betgram-webapp-backend/app/views/index.scala.html
+                  DATE: Sat Nov 07 15:36:16 COT 2015
+                  SOURCE: /Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/app/views/index.scala.html
                   HASH: 3a1e02cbb68446f31978975278531d625dc98e9c
                   MATRIX: 745->1|857->18|885->21|916->44|955->46|987->49
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5
