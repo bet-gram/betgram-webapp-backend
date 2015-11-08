@@ -298,13 +298,6 @@
 [debug] sbt-chain: module revision found in cache: org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f
 [debug] 	found org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f in sbt-chain
 [debug] == resolving dependencies org.scala-sbt#ivy;0.13.8->com.jcraft#jsch;0.1.46 [compile->default(compile)]
-[info] Resolving com.jcraft#jsch;0.1.46 ...
-[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.46 {compile=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.46
-[debug] 	found com.jcraft#jsch;0.1.46 in sbt-chain
-[debug] == resolving dependencies org.scala-sbt#ivy;0.13.8->com.jcraft#jsch;0.1.46 [compile->runtime]
-[debug] == resolving dependencies org.scala-sbt#ivy;0.13.8->com.jcraft#jsch;0.1.46 [compile->compile]
-[debug] == resolving dependencies org.scala-sbt#ivy;0.13.8->com.jcraft#jsch;0.1.46 [compile->master]
 [debug] == resolving dependencies org.scala-sbt#ivy;0.13.8->org.scala-sbt#serialization_2.10;0.1.1 [compile->default(compile)]
 [info] Resolving org.scala-sbt#serialization_2.10;0.1.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#serialization_2.10;0.1.1 {compile=[default(compile)]}
@@ -3898,6 +3891,303 @@
 [debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->runtime]
 [debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->compile]
 [debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.heroku#sbt-heroku;0.5.1 [default->default(compile)]
+[info] Resolving com.heroku#sbt-heroku;0.5.1 ...
+[debug] sbt-chain: Checking cache for: dependency: com.heroku#sbt-heroku;0.5.1 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.heroku#sbt-heroku;0.5.1
+[debug] 	found com.heroku#sbt-heroku;0.5.1 in sbt-chain
+[debug] 	[0.5.1] com.heroku#sbt-heroku;0.5.1
+[debug] == resolving dependencies com.heroku#sbt-heroku;0.5.1->com.heroku.sdk#heroku-deploy;0.5.1 [compile->default(compile)]
+[info] Resolving com.heroku.sdk#heroku-deploy;0.5.1 ...
+[debug] sbt-chain: Checking cache for: dependency: com.heroku.sdk#heroku-deploy;0.5.1 {compile=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.heroku.sdk#heroku-deploy;0.5.1
+[debug] 	found com.heroku.sdk#heroku-deploy;0.5.1 in sbt-chain
+[debug] == resolving dependencies com.heroku#sbt-heroku;0.5.1->com.heroku.sdk#heroku-deploy;0.5.1 [compile->runtime]
+[debug] == resolving dependencies com.heroku#sbt-heroku;0.5.1->com.heroku.sdk#heroku-deploy;0.5.1 [compile->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.3 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.3 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.0 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.0 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.3 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.5 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.9 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.5 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.9 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->commons-io#commons-io;2.4 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->commons-io#commons-io;2.4 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.3.2 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.4 [compile->master(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.3.2 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.4 [compile->compile(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->master(compile)]
+[info] Resolving org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r
+[debug] 	found org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r in sbt-chain
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->compile(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[info] Resolving com.jcraft#jsch;0.1.50 ...
+[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.50 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.50
+[debug] 	found com.jcraft#jsch;0.1.50 in sbt-chain
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->compile(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->default(compile)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->runtime]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->compile]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [compile->master]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.9 {default=[default(compile)]} => dependency: org.apache.commons#commons-compress;1.6 {default=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {default=[default(compile)]}
+[info] Resolving com.googlecode.javaewah#JavaEWAH;0.7.9 ...
+[debug] sbt-chain: Checking cache for: dependency: com.googlecode.javaewah#JavaEWAH;0.7.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: com.googlecode.javaewah#JavaEWAH;0.7.9
+[debug] 	found com.googlecode.javaewah#JavaEWAH;0.7.9 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->compile(*)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->default(compile)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->runtime]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.10 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.9 {default=[default(compile)]} => dependency: org.apache.commons#commons-compress;1.6 {default=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {default=[default(compile)]}
+[info] Resolving org.apache.httpcomponents#httpclient;4.1.3 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.1.3
+[debug] 	found org.apache.httpcomponents#httpclient;4.1.3 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->compile(*)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->org.apache.httpcomponents#httpcore;4.1.4 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.9 {default=[default(compile)]} => dependency: org.apache.commons#commons-compress;1.6 {default=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {default=[default(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->org.apache.httpcomponents#httpcore;4.1.4 [compile->compile(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-logging#commons-logging;1.1.1 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.9 {default=[default(compile)]} => dependency: org.apache.commons#commons-compress;1.6 {default=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {default=[default(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-logging#commons-logging;1.1.1 [compile->compile(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-codec#commons-codec;1.4 [compile->master(compile)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.commons#commons-compress;1.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.commons#commons-compress;1.9 {default=[default(compile)]} => dependency: org.apache.commons#commons-compress;1.6 {default=[default(compile)]}
+[debug] dependency descriptor has been mediated: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]} => dependency: org.apache.httpcomponents#httpclient;4.1.3 {default=[default(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-codec#commons-codec;1.4 [compile->compile(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->runtime(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->org.apache.httpcomponents#httpcore;4.1.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-logging#commons-logging;1.1.1 [runtime->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.1.3->commons-codec#commons-codec;1.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->default(compile)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->runtime]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->compile]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;4.8.2 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->compile]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [runtime->runtime(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.jcraft#jsch;0.1.50 [runtime->compile]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [runtime->runtime(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->com.googlecode.javaewah#JavaEWAH;0.7.9 [runtime->compile]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [runtime->runtime(*)]
+[debug] == resolving dependencies org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r->org.apache.httpcomponents#httpclient;4.1.3 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->default(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->runtime]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [compile->master]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->master(compile)]
+[info] Resolving org.apache.httpcomponents#httpclient;4.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.4
+[debug] 	found org.apache.httpcomponents#httpclient;4.4 in sbt-chain
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->compile(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->master(compile)]
+[info] Resolving org.apache.httpcomponents#httpcore;4.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.4 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.4
+[debug] 	found org.apache.httpcomponents#httpcore;4.4 in sbt-chain
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->compile(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->default(compile)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->runtime]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [compile->master]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->master(compile)]
+[info] Resolving commons-logging#commons-logging;1.2 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.2 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.2
+[debug] 	found commons-logging#commons-logging;1.2 in sbt-chain
+[debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->compile(*)]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->compile]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->default(compile)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->runtime]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [compile->master]
+[debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(compile)]} => dependency: junit#junit;4.11 {test=[runtime(*), master(compile)]}
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->master(compile)]
+[info] Resolving commons-codec#commons-codec;1.9 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.9 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}
+[debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.9
+[debug] 	found commons-codec#commons-codec;1.9 in sbt-chain
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->compile(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->default(compile)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->runtime]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [compile->master]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [runtime->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->org.apache.httpcomponents#httpcore;4.4 [runtime->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [runtime->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-logging#commons-logging;1.2 [runtime->compile]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [runtime->runtime(*)]
+[debug] == resolving dependencies org.apache.httpcomponents#httpclient;4.4->commons-codec#commons-codec;1.9 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->runtime]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->default(compile)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->runtime]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [compile->master]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-core;2.3.3 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.0 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->com.fasterxml.jackson.core#jackson-databind;2.3.3 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.5 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.9 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-compress;1.9 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->commons-io#commons-io;2.4 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->commons-io#commons-io;2.4 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.3.2 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.4 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.commons#commons-lang3;3.4 [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [runtime->compile]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [runtime->runtime(*)]
+[debug] == resolving dependencies com.heroku.sdk#heroku-deploy;0.5.1->org.apache.httpcomponents#httpclient;4.4 [runtime->compile]
+[debug] == resolving dependencies com.heroku#sbt-heroku;0.5.1->com.heroku.sdk#heroku-deploy;0.5.1 [compile->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->master]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->default(compile)]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sbt_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.8!sbt.jar
@@ -4012,6 +4302,15 @@
 [debug] 	[NOT REQUIRED] javax.persistence#persistence-api;1.0!persistence-api.jar
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.1.0!play-enhancer.jar
+[debug] 	[NOT REQUIRED] com.heroku#sbt-heroku;0.5.1!sbt-heroku.jar
+[debug] 	[NOT REQUIRED] com.heroku.sdk#heroku-deploy;0.5.1!heroku-deploy.jar
+[debug] 	[NOT REQUIRED] org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r!org.eclipse.jgit.jar
+[debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.50!jsch.jar
+[debug] 	[NOT REQUIRED] com.googlecode.javaewah#JavaEWAH;0.7.9!JavaEWAH.jar(bundle)
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpclient;4.4!httpclient.jar
+[debug] 	[NOT REQUIRED] org.apache.httpcomponents#httpcore;4.4!httpcore.jar
+[debug] 	[NOT REQUIRED] commons-logging#commons-logging;1.2!commons-logging.jar
+[debug] 	[NOT REQUIRED] commons-codec#commons-codec;1.9!commons-codec.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#main;0.13.8!main.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-src.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.8!compiler-interface-bin.jar
@@ -4049,7 +4348,6 @@
 [debug] 	[NOT REQUIRED] org.scala-tools.sbinary#sbinary_2.10;0.4.2!sbinary_2.10.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#cross;0.13.8!cross.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f!ivy.jar
-[debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#serialization_2.10;0.1.1!serialization_2.10.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-pickling_2.10;0.10.0!scala-pickling_2.10.jar
 [debug] 	[NOT REQUIRED] org.json4s#json4s-core_2.10;3.2.10!json4s-core_2.10.jar
@@ -4068,9 +4366,9 @@
 [debug] 	[NOT REQUIRED] asm#asm;3.1!asm.jar
 [debug] 	[NOT REQUIRED] jfree#jcommon;1.0.12!jcommon.jar
 [debug] 	[NOT REQUIRED] jfree#jfreechart;1.0.8a!jfreechart.jar
-[debug] :: resolution report :: resolve 1079ms :: artifacts dl 48ms
+[debug] :: resolution report :: resolve 793ms :: artifacts dl 33ms
 [debug] 	report for betgram#betgram$sbt_2.11;1.0-SNAPSHOT default produced in /Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sbt_2.11-default.xml
-[debug] 	resolve done (1079ms resolve - 48ms download)
+[debug] 	resolve done (793ms resolve - 33ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: betgram#betgram$sources_2.11;1.0-SNAPSHOT
 [debug] 	confs: [default]
@@ -4233,14 +4531,6 @@
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f {default=[default(compile)]}
 [debug] sbt-chain: module revision found in cache: org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f
 [debug] 	found org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f in sbt-chain
-[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.46 [default->default(compile)]
-[info] Resolving com.jcraft#jsch;0.1.46 ...
-[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.46 {default=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.46
-[debug] 	found com.jcraft#jsch;0.1.46 in sbt-chain
-[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.46 [default->runtime]
-[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.46 [default->compile]
-[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.46 [default->master]
 [debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.scala-sbt#serialization_2.10;0.1.1 [default->default(compile)]
 [info] Resolving org.scala-sbt#serialization_2.10;0.1.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-sbt#serialization_2.10;0.1.1 {default=[default(compile)]}
@@ -5103,6 +5393,76 @@
 [debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->runtime]
 [debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->compile]
 [debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.typesafe.play#play-enhancer;1.1.0 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.heroku#sbt-heroku;0.5.1 [default->default(compile)]
+[info] Resolving com.heroku#sbt-heroku;0.5.1 ...
+[debug] sbt-chain: Checking cache for: dependency: com.heroku#sbt-heroku;0.5.1 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.heroku#sbt-heroku;0.5.1
+[debug] 	found com.heroku#sbt-heroku;0.5.1 in sbt-chain
+[debug] 	[0.5.1] com.heroku#sbt-heroku;0.5.1
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->default(compile)]
+[info] Resolving com.heroku.sdk#heroku-deploy;0.5.1 ...
+[debug] sbt-chain: Checking cache for: dependency: com.heroku.sdk#heroku-deploy;0.5.1 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.heroku.sdk#heroku-deploy;0.5.1
+[debug] 	found com.heroku.sdk#heroku-deploy;0.5.1 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.heroku.sdk#heroku-deploy;0.5.1 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->default(compile)]
+[info] Resolving org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r ...
+[debug] sbt-chain: Checking cache for: dependency: org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r
+[debug] 	found org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->default(compile)]
+[info] Resolving com.jcraft#jsch;0.1.50 ...
+[debug] sbt-chain: Checking cache for: dependency: com.jcraft#jsch;0.1.50 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.jcraft#jsch;0.1.50
+[debug] 	found com.jcraft#jsch;0.1.50 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.jcraft#jsch;0.1.50 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->default(compile)]
+[info] Resolving com.googlecode.javaewah#JavaEWAH;0.7.9 ...
+[debug] sbt-chain: Checking cache for: dependency: com.googlecode.javaewah#JavaEWAH;0.7.9 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: com.googlecode.javaewah#JavaEWAH;0.7.9
+[debug] 	found com.googlecode.javaewah#JavaEWAH;0.7.9 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->com.googlecode.javaewah#JavaEWAH;0.7.9 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->default(compile)]
+[info] Resolving org.apache.httpcomponents#httpclient;4.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpclient;4.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpclient;4.4
+[debug] 	found org.apache.httpcomponents#httpclient;4.4 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpclient;4.4 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->default(compile)]
+[info] Resolving org.apache.httpcomponents#httpcore;4.4 ...
+[debug] sbt-chain: Checking cache for: dependency: org.apache.httpcomponents#httpcore;4.4 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: org.apache.httpcomponents#httpcore;4.4
+[debug] 	found org.apache.httpcomponents#httpcore;4.4 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->org.apache.httpcomponents#httpcore;4.4 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->default(compile)]
+[info] Resolving commons-logging#commons-logging;1.2 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-logging#commons-logging;1.2 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.2
+[debug] 	found commons-logging#commons-logging;1.2 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-logging#commons-logging;1.2 [default->master]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->default(compile)]
+[info] Resolving commons-codec#commons-codec;1.9 ...
+[debug] sbt-chain: Checking cache for: dependency: commons-codec#commons-codec;1.9 {default=[default(compile)]}
+[debug] sbt-chain: module revision found in cache: commons-codec#commons-codec;1.9
+[debug] 	found commons-codec#commons-codec;1.9 in sbt-chain
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->runtime]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->compile]
+[debug] == resolving dependencies betgram#betgram$sources_2.11;1.0-SNAPSHOT->commons-codec#commons-codec;1.9 [default->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-sbt#sbt;0.13.8!sbt.jar(src)
@@ -5133,7 +5493,6 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#ivy;0.13.8!ivy.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#cross;0.13.8!cross.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt.ivy#ivy;2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f!ivy.jar(src)
-[debug] 	[NOT REQUIRED] com.jcraft#jsch;0.1.46!jsch.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#serialization_2.10;0.1.1!serialization_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-pickling_2.10;0.10.0!scala-pickling_2.10.jar(src)
 [debug] 	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar(src)
@@ -5251,6 +5610,102 @@
 [debug] 	[NOT REQUIRED] javax.persistence#persistence-api;1.0!persistence-api.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.sbt#sbt-play-enhancer;1.1.0!sbt-play-enhancer.jar(src)
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-enhancer;1.1.0!play-enhancer.jar(src)
-[debug] :: resolution report :: resolve 684ms :: artifacts dl 39ms
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar
+[info] downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar ...
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar
+[debug] 	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar.sha1
+[debug] sha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku/sbt-heroku/scala_2.10/sbt_0.13/0.5.1/srcs/sbt-heroku-sources.jar
+[info] 	[SUCCESSFUL ] com.heroku#sbt-heroku;0.5.1!sbt-heroku.jar(src) (2153ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.heroku.sdk/heroku-deploy/0.5.1/srcs/heroku-deploy-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.heroku.sdk/heroku-deploy/0.5.1/srcs/heroku-deploy-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku.sdk/heroku-deploy/0.5.1/srcs/heroku-deploy-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.heroku.sdk/heroku-deploy/0.5.1/srcs/heroku-deploy-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/com.heroku.sdk/heroku-deploy/0.5.1/srcs/heroku-deploy-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/heroku/sdk/heroku-deploy/0.5.1/heroku-deploy-0.5.1-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/heroku/sdk/heroku-deploy/0.5.1/heroku-deploy-0.5.1-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/heroku/sdk/heroku-deploy/0.5.1/heroku-deploy-0.5.1-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/heroku/sdk/heroku-deploy/0.5.1/heroku-deploy-0.5.1-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/heroku/sdk/heroku-deploy/0.5.1/heroku-deploy-0.5.1-sources.jar
+[info] 	[SUCCESSFUL ] com.heroku.sdk#heroku-deploy;0.5.1!heroku-deploy.jar(src) (783ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.eclipse.jgit/org.eclipse.jgit/3.6.2.201501210735-r/srcs/org.eclipse.jgit-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.eclipse.jgit/org.eclipse.jgit/3.6.2.201501210735-r/srcs/org.eclipse.jgit-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.eclipse.jgit/org.eclipse.jgit/3.6.2.201501210735-r/srcs/org.eclipse.jgit-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.eclipse.jgit/org.eclipse.jgit/3.6.2.201501210735-r/srcs/org.eclipse.jgit-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/org.eclipse.jgit/org.eclipse.jgit/3.6.2.201501210735-r/srcs/org.eclipse.jgit-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r-sources.jar
+[info] 	[SUCCESSFUL ] org.eclipse.jgit#org.eclipse.jgit;3.6.2.201501210735-r!org.eclipse.jgit.jar(src) (2031ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.jcraft/jsch/0.1.50/srcs/jsch-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.jcraft/jsch/0.1.50/srcs/jsch-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jcraft/jsch/0.1.50/srcs/jsch-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.jcraft/jsch/0.1.50/srcs/jsch-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/com.jcraft/jsch/0.1.50/srcs/jsch-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50-sources.jar
+[info] 	[SUCCESSFUL ] com.jcraft#jsch;0.1.50!jsch.jar(src) (661ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/com.googlecode.javaewah/JavaEWAH/0.7.9/srcs/JavaEWAH-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.googlecode.javaewah/JavaEWAH/0.7.9/srcs/JavaEWAH-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.googlecode.javaewah/JavaEWAH/0.7.9/srcs/JavaEWAH-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.googlecode.javaewah/JavaEWAH/0.7.9/srcs/JavaEWAH-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/com.googlecode.javaewah/JavaEWAH/0.7.9/srcs/JavaEWAH-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9-sources.jar
+[info] downloading https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9-sources.jar
+[info] 	[SUCCESSFUL ] com.googlecode.javaewah#JavaEWAH;0.7.9!JavaEWAH.jar(src) (498ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpclient/4.4/srcs/httpclient-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpclient/4.4/srcs/httpclient-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.httpcomponents/httpclient/4.4/srcs/httpclient-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.httpcomponents/httpclient/4.4/srcs/httpclient-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/org.apache.httpcomponents/httpclient/4.4/srcs/httpclient-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.4/httpclient-4.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.4/httpclient-4.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.4/httpclient-4.4-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.4/httpclient-4.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.4/httpclient-4.4-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.httpcomponents#httpclient;4.4!httpclient.jar(src) (1007ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcore/4.4/srcs/httpcore-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.apache.httpcomponents/httpcore/4.4/srcs/httpcore-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.httpcomponents/httpcore/4.4/srcs/httpcore-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.apache.httpcomponents/httpcore/4.4/srcs/httpcore-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/org.apache.httpcomponents/httpcore/4.4/srcs/httpcore-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4-sources.jar
+[info] downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.4/httpcore-4.4-sources.jar
+[info] 	[SUCCESSFUL ] org.apache.httpcomponents#httpcore;4.4!httpcore.jar(src) (879ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/commons-logging/commons-logging/1.2/srcs/commons-logging-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/commons-logging/commons-logging/1.2/srcs/commons-logging-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-logging/commons-logging/1.2/srcs/commons-logging-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-logging/commons-logging/1.2/srcs/commons-logging-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/commons-logging/commons-logging/1.2/srcs/commons-logging-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+[info] downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar
+[info] 	[SUCCESSFUL ] commons-logging#commons-logging;1.2!commons-logging.jar(src) (473ms)
+[debug] 		tried https://repo.typesafe.com/typesafe/ivy-releases/commons-codec/commons-codec/1.9/srcs/commons-codec-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/commons-codec/commons-codec/1.9/srcs/commons-codec-sources.jar
+[debug] 		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-codec/commons-codec/1.9/srcs/commons-codec-sources.jar
+[debug] CLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/commons-codec/commons-codec/1.9/srcs/commons-codec-sources.jar
+[debug] 		tried /Users/scvalencia606/.ivy2/local/commons-codec/commons-codec/1.9/srcs/commons-codec-sources.jar
+[debug] 		tried https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar
+[info] downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar ...
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar
+[debug] 	public: downloading https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar.sha1
+[debug] sha1 OK for https://repo1.maven.org/maven2/commons-codec/commons-codec/1.9/commons-codec-1.9-sources.jar
+[info] 	[SUCCESSFUL ] commons-codec#commons-codec;1.9!commons-codec.jar(src) (670ms)
+[debug] :: resolution report :: resolve 477ms :: artifacts dl 16496ms
 [debug] 	report for betgram#betgram$sources_2.11;1.0-SNAPSHOT default produced in /Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/target/resolution-cache/reports/betgram-betgram$sources_2.11-default.xml
-[debug] 	resolve done (684ms resolve - 39ms download)
+[debug] 	resolve done (477ms resolve - 16496ms download)

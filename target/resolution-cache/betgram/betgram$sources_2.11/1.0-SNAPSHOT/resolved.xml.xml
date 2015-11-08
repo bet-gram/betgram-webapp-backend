@@ -4,7 +4,7 @@
 		module="betgram$sources_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151107153848"
+		publication="20151107202720"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>
@@ -95,9 +95,6 @@
 		</dependency>
 		<dependency org="org.scala-sbt.ivy" name="ivy" rev="2.3.0-sbt-fccfbd44c9f64523b61398a0155784dcbaeae28f" transitive="false" conf="default->default(compile)">
 			<artifact name="ivy" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="com.jcraft" name="jsch" rev="0.1.46" transitive="false" conf="default->default(compile)">
-			<artifact name="jsch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="org.scala-sbt" name="serialization_2.10" rev="0.1.1" transitive="false" conf="default->default(compile)">
 			<artifact name="serialization_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
@@ -449,6 +446,33 @@
 		</dependency>
 		<dependency org="com.typesafe.play" name="play-enhancer" rev="1.1.0" transitive="false" conf="default->default(compile)">
 			<artifact name="play-enhancer" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.heroku" name="sbt-heroku" rev="0.5.1" transitive="false" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13">
+			<artifact name="sbt-heroku" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.heroku.sdk" name="heroku-deploy" rev="0.5.1" transitive="false" conf="default->default(compile)">
+			<artifact name="heroku-deploy" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.eclipse.jgit" name="org.eclipse.jgit" rev="3.6.2.201501210735-r" transitive="false" conf="default->default(compile)">
+			<artifact name="org.eclipse.jgit" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.jcraft" name="jsch" rev="0.1.50" transitive="false" conf="default->default(compile)">
+			<artifact name="jsch" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="com.googlecode.javaewah" name="JavaEWAH" rev="0.7.9" transitive="false" conf="default->default(compile)">
+			<artifact name="JavaEWAH" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.4" transitive="false" conf="default->default(compile)">
+			<artifact name="httpclient" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4" transitive="false" conf="default->default(compile)">
+			<artifact name="httpcore" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="commons-logging" name="commons-logging" rev="1.2" transitive="false" conf="default->default(compile)">
+			<artifact name="commons-logging" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		</dependency>
+		<dependency org="commons-codec" name="commons-codec" rev="1.9" transitive="false" conf="default->default(compile)">
+			<artifact name="commons-codec" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 	</dependencies>
 </ivy-module>

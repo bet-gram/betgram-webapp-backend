@@ -4,7 +4,7 @@
 		module="betgram$sbt_2.11"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20151107153847"
+		publication="20151107202719"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
@@ -124,5 +124,14 @@
 		<dependency org="javax.persistence" name="persistence-api" rev="1.0" conf="default->default(compile)"/>
 		<dependency org="com.typesafe.sbt" name="sbt-play-enhancer" rev="1.1.0" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
 		<dependency org="com.typesafe.play" name="play-enhancer" rev="1.1.0" conf="default->default(compile)"/>
+		<dependency org="com.heroku" name="sbt-heroku" rev="0.5.1" conf="default->default(compile)" scalaVersion="2.10" sbtVersion="0.13"/>
+		<dependency org="com.heroku.sdk" name="heroku-deploy" rev="0.5.1" conf="default->default(compile)"/>
+		<dependency org="org.eclipse.jgit" name="org.eclipse.jgit" rev="3.6.2.201501210735-r" conf="default->default(compile)"/>
+		<dependency org="com.jcraft" name="jsch" rev="0.1.50" conf="default->default(compile)"/>
+		<dependency org="com.googlecode.javaewah" name="JavaEWAH" rev="0.7.9" conf="default->default(compile)"/>
+		<dependency org="org.apache.httpcomponents" name="httpclient" rev="4.4" conf="default->default(compile)"/>
+		<dependency org="org.apache.httpcomponents" name="httpcore" rev="4.4" conf="default->default(compile)"/>
+		<dependency org="commons-logging" name="commons-logging" rev="1.2" conf="default->default(compile)"/>
+		<dependency org="commons-codec" name="commons-codec" rev="1.9" conf="default->default(compile)"/>
 	</dependencies>
 </ivy-module>
