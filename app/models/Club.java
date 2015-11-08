@@ -77,6 +77,11 @@ public class Club extends Model {
 	private String website;
 
 	/**
+	 * betgram name
+	 */
+	private String betgramCode;
+
+	/**
 	 * @param fullName
 	 * @param city
 	 * @param country
@@ -89,7 +94,7 @@ public class Club extends Model {
 	 * @param website
 	 */
 	public Club(String fullName, City city, Country country, Date founded, Ground ground, String owner, Human chairman,
-				Manager manager, League league, String website) {
+				Manager manager, League league, String website, String betgramCode) {
 		this.fullName = fullName;
 		this.city = city;
 		this.country = country;
@@ -102,6 +107,7 @@ public class Club extends Model {
 		this.website = website;
 		this.shortnames = new ArrayList<String>();
 		this.nicknames = new ArrayList<String>();
+		this.betgramCode = betgramCode;
 	}
 
 	/**
@@ -300,6 +306,13 @@ public class Club extends Model {
 		this.website = website;
 	}
 
+	public String getBetgramCode() {
+		return betgramCode;
+	}
+
+	public void setBetgramCode(String betgramCode) {
+		this.betgramCode = betgramCode;
+	}
 
 	public static Finder<Long, Club> find = new Finder<Long, Club>(
 			Long.class, Club.class

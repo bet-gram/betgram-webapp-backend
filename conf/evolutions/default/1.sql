@@ -4,24 +4,24 @@
 # --- !Ups
 
 create table betting_odd (
-  id                        bigserial not null,
+  id                        bigint not null,
   constraint pk_betting_odd primary key (id))
 ;
 
 create table blog (
-  id                        bigserial not null,
+  id                        bigint not null,
   constraint pk_blog primary key (id))
 ;
 
 create table city (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   website                   varchar(255),
   constraint pk_city primary key (id))
 ;
 
 create table club (
-  id                        bigserial not null,
+  id                        bigint not null,
   full_name                 varchar(255),
   founded                   timestamp,
   owner                     varchar(255),
@@ -30,7 +30,7 @@ create table club (
 ;
 
 create table confederation (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   founded                   timestamp,
   website                   varchar(255),
@@ -38,7 +38,7 @@ create table confederation (
 ;
 
 create table country (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   national_language         varchar(255),
   currency                  varchar(255),
@@ -46,7 +46,7 @@ create table country (
 ;
 
 create table ground (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   capacity                  integer,
   record_attendance         integer,
@@ -55,14 +55,14 @@ create table ground (
 ;
 
 create table human (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   date_of_birth             timestamp,
   constraint pk_human primary key (id))
 ;
 
 create table league (
-  id                        bigserial not null,
+  id                        bigint not null,
   founded                   timestamp,
   name                      varchar(255),
   website                   varchar(255),
@@ -70,19 +70,19 @@ create table league (
 ;
 
 create table payment (
-  id                        bigserial not null,
-  amount                    float,
+  id                        bigint not null,
+  amount                    double,
   constraint pk_payment primary key (id))
 ;
 
 create table position (
-  id                        bigserial not null,
+  id                        bigint not null,
   name                      varchar(255),
   constraint pk_position primary key (id))
 ;
 
 create table statistic (
-  id                        bigserial not null,
+  id                        bigint not null,
   home                      varchar(255),
   away                      varchar(255),
   league                    varchar(255),
@@ -112,121 +112,148 @@ create table statistic (
   ar                        integer,
   hbp                       integer,
   abp                       integer,
-  b365h                     float,
-  b365d                     float,
-  b365a                     float,
-  bsh                       float,
-  bsd                       float,
-  bsa                       float,
-  bwh                       float,
-  bwd                       float,
-  bwa                       float,
-  gbh                       float,
-  gbd                       float,
-  gba                       float,
-  iwh                       float,
-  iwd                       float,
-  iwa                       float,
-  lbh                       float,
-  lbd                       float,
-  lba                       float,
-  psh                       float,
-  psd                       float,
-  psa                       float,
-  soh                       float,
-  sod                       float,
-  soa                       float,
-  sbh                       float,
-  sbd                       float,
-  sba                       float,
-  sjh                       float,
-  sjd                       float,
-  sja                       float,
-  syh                       float,
-  syd                       float,
-  sya                       float,
-  vch                       float,
-  vcd                       float,
-  vca                       float,
-  whh                       float,
-  whd                       float,
-  wha                       float,
+  b365h                     double,
+  b365d                     double,
+  b365a                     double,
+  bsh                       double,
+  bsd                       double,
+  bsa                       double,
+  bwh                       double,
+  bwd                       double,
+  bwa                       double,
+  gbh                       double,
+  gbd                       double,
+  gba                       double,
+  iwh                       double,
+  iwd                       double,
+  iwa                       double,
+  lbh                       double,
+  lbd                       double,
+  lba                       double,
+  psh                       double,
+  psd                       double,
+  psa                       double,
+  soh                       double,
+  sod                       double,
+  soa                       double,
+  sbh                       double,
+  sbd                       double,
+  sba                       double,
+  sjh                       double,
+  sjd                       double,
+  sja                       double,
+  syh                       double,
+  syd                       double,
+  sya                       double,
+  vch                       double,
+  vcd                       double,
+  vca                       double,
+  whh                       double,
+  whd                       double,
+  wha                       double,
   bb1x2                     integer,
-  bb_mx_h                   float,
-  bb_av_h                   float,
-  bb_mx_d                   float,
-  bb_av_d                   float,
-  bb_mx_a                   float,
-  bb_av_a                   float,
+  bb_mx_h                   double,
+  bb_av_h                   double,
+  bb_mx_d                   double,
+  bb_av_d                   double,
+  bb_mx_a                   double,
+  bb_av_a                   double,
   bb_ou                     integer,
-  bb_mx_more                float,
-  bb_av_more                float,
-  bb_mx_less                float,
-  bb_av_less                float,
-  gbmore                    float,
-  gbless                    float,
-  b365more                  float,
-  b365less                  float,
-  bb_ah                     float,
-  bb_ahh                    float,
-  bb_mx_ahh                 float,
-  bb_av_ahh                 float,
-  bb_mx_aha                 float,
-  bb_av_aha                 float,
+  bb_mx_more                double,
+  bb_av_more                double,
+  bb_mx_less                double,
+  bb_av_less                double,
+  gbmore                    double,
+  gbless                    double,
+  b365more                  double,
+  b365less                  double,
+  bb_ah                     double,
+  bb_ahh                    double,
+  bb_mx_ahh                 double,
+  bb_av_ahh                 double,
+  bb_mx_aha                 double,
+  bb_av_aha                 double,
   constraint pk_statistic primary key (id))
 ;
 
-create table subscription (
-  id                        bigserial not null,
-  expiration_date           timestamp,
-  start_date                timestamp,
-  active                    boolean,
-  constraint pk_subscription primary key (id))
-;
+create sequence betting_odd_seq;
 
-create table user (
-  id                        bigserial not null,
-  username                  varchar(255),
-  password                  varchar(255),
-  first_name                varchar(255),
-  last_name                 varchar(255),
-  email                     varchar(255),
-  date_of_birth             timestamp,
-  country                   varchar(255),
-  city                      varchar(255),
-  constraint pk_user primary key (id))
-;
+create sequence blog_seq;
+
+create sequence city_seq;
+
+create sequence club_seq;
+
+create sequence confederation_seq;
+
+create sequence country_seq;
+
+create sequence ground_seq;
+
+create sequence human_seq;
+
+create sequence league_seq;
+
+create sequence payment_seq;
+
+create sequence position_seq;
+
+create sequence statistic_seq;
 
 
 
 
 # --- !Downs
 
-drop table if exists betting_odd cascade;
+SET REFERENTIAL_INTEGRITY FALSE;
 
-drop table if exists blog cascade;
+drop table if exists betting_odd;
 
-drop table if exists city cascade;
+drop table if exists blog;
 
-drop table if exists club cascade;
+drop table if exists city;
 
-drop table if exists confederation cascade;
+drop table if exists club;
 
-drop table if exists country cascade;
+drop table if exists confederation;
 
-drop table if exists ground cascade;
+drop table if exists country;
 
-drop table if exists human cascade;
+drop table if exists ground;
 
-drop table if exists league cascade;
+drop table if exists human;
 
-drop table if exists payment cascade;
+drop table if exists league;
 
-drop table if exists position cascade;
+drop table if exists payment;
 
-drop table if exists statistic cascade;
+drop table if exists position;
 
-drop table if exists subscription cascade;
+drop table if exists statistic;
 
-drop table if exists user cascade;
+SET REFERENTIAL_INTEGRITY TRUE;
+
+drop sequence if exists betting_odd_seq;
+
+drop sequence if exists blog_seq;
+
+drop sequence if exists city_seq;
+
+drop sequence if exists club_seq;
+
+drop sequence if exists confederation_seq;
+
+drop sequence if exists country_seq;
+
+drop sequence if exists ground_seq;
+
+drop sequence if exists human_seq;
+
+drop sequence if exists league_seq;
+
+drop sequence if exists payment_seq;
+
+drop sequence if exists position_seq;
+
+drop sequence if exists statistic_seq;
 
