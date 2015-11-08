@@ -2,6 +2,7 @@ package models;
 
 import com.avaje.ebean.Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -77,7 +78,7 @@ public class Statistic extends Model {
     /**
      * away team shots
      */
-    private int AS;
+    private int ASHOTS;
 
     /**
      * home team shots on target
@@ -162,196 +163,235 @@ public class Statistic extends Model {
     /**
      * Bet365 home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double B365H;
 
     /**
      * Bet365 draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double B365D;
 
     /**
      * Bet365 away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double B365A;
 
     /**
      * Blue Square home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BSH;
 
     /**
      * Blue Square draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double BSD;
 
     /**
      * Blue Square away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BSA;
 
     /**
      * Bet&Win home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BWH;
 
     /**
      * Bet&Win draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double BWD;
 
     /**
      * Bet&Win away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BWA;
 
     /**
      * Gamebookers home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double GBH;
 
     /**
      * Gamebookers draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double GBD;
 
     /**
      * Gamebookers draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double GBA;
 
     /**
      * Interwetten home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double IWH;
 
     /**
      * Interwetten draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double IWD;
 
     /**
      * Interwetten away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double IWA;
 
     /**
      * Ladbrokes home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double LBH;
 
     /**
      * Ladbrokes draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double LBD;
 
     /**
      * Ladbrokes away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double LBA;
 
     /**
      * Pinnacle Sports home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double PSH;
 
     /**
      * Pinnacle Sports draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double PSD;
 
     /**
      * Pinnacle Sports away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double PSA;
 
     /**
      * Sporting Odds home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SOH;
 
     /**
      * Sporting Odds draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double SOD;
 
     /**
      * Sporting Odds away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SOA;
 
     /**
      * Sportingbet home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SBH;
 
     /**
      * Sportingbet draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double SBD;
 
     /**
      * Sportingbet away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SBA;
 
     /**
      * Stan James home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SJH;
 
     /**
      * Stan James draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double SJD;
 
     /**
      * Stan James away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SJA;
 
     /**
      * Stanleybet home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SYH;
 
     /**
      * Stanleybet draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double SYD;
 
     /**
      * Stanleybet away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double SYA;
 
     /**
      * VC Bet home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double VCH;
 
     /**
      * VC Bet draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double VCD;
 
     /**
      * VC Bet away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double VCA;
 
     /**
      * William Hill home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double WHH;
 
     /**
      * William Hill draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double WHD;
 
     /**
      * William Hill away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double WHA;
 
     /**
@@ -362,31 +402,37 @@ public class Statistic extends Model {
     /**
      * Betbrain maximum home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxH;
 
     /**
      * Betbrain average home win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvH;
 
     /**
      * Betbrain maximum draw odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxD;
 
     /**
      * Betbrain average draw win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvD;
 
     /**
      * Betbrain maximum away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxA;
 
     /**
      * Betbrain average away win odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvA;
 
     /**
@@ -397,31 +443,37 @@ public class Statistic extends Model {
     /**
      * Betbrain maximum over 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxMore;
 
     /**
      * Betbrain average over 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvMore;
 
     /**
      * Betbrain maximum under 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxLess;
 
     /**
      * Betbrain average under 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvLess;
 
     /**
      * Gamebookers over 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double GBMore;
 
     /**
      * Gamebookers under 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double GBLess;
 
     /**
@@ -432,36 +484,43 @@ public class Statistic extends Model {
     /**
      * Bet365 under 2.5 goals
      */
+    @Column(columnDefinition = "REAL")
     private double B365Less;
 
     /**
      * Number of BetBrain bookmakers used to Asian handicap averages and maximums
      */
+    @Column(columnDefinition = "REAL")
     private double BbAH;
 
     /**
      * Betbrain size of handicap (home team)
      */
+    @Column(columnDefinition = "REAL")
     private double BbAHh;
 
     /**
      * Betbrain maximum Asian handicap home team odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxAHH;
 
     /**
      * Betbrain average Asian handicap home team odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvAHH;
 
     /**
      * Betbrain maximum Asian handicap away team odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbMxAHA;
 
     /**
      * Betbrain average Asian handicap away team odds
      */
+    @Column(columnDefinition = "REAL")
     private double BbAvAHA;
 
     public Statistic(Long id, String home, String away, String league, int FTHG, int FTAG, char FTR, int HTHG, int HTAG, char HTR, int attendance, String referee, int HS, int AS, int HST, int AST, int HHW, int AHW, int HC, int AC, int HF, int AW, int HO, int AO, int HY, int AY, int HR, int AR, int HBP, int ABP, double b365H, double b365D, double b365A, double BSH, double BSD, double BSA, double BWH, double BWD, double BWA, double GBH, double GBD, double GBA, double IWH, double IWD, double IWA, double LBH, double LBD, double LBA, double PSH, double PSD, double PSA, double SOH, double SOD, double SOA, double SBH, double SBD, double SBA, double SJH, double SJD, double SJA, double SYH, double SYD, double SYA, double VCH, double VCD, double VCA, double WHH, double WHD, double WHA, int bb1X2, double bbMxH, double bbAvH, double bbMxD, double bbAvD, double bbMxA, double bbAvA, int bbOU, double bbMxMore, double bbAvMore, double bbMxLess, double bbAvLess, double GBMore, double GBLess, double b365More, double b365Less, double bbAH, double bbAHh, double bbMxAHH, double bbAvAHH, double bbMxAHA, double bbAvAHA) {
@@ -478,7 +537,7 @@ public class Statistic extends Model {
         this.attendance = attendance;
         this.referee = referee;
         this.HS = HS;
-        this.AS = AS;
+        this.ASHOTS = AS;
         this.HST = HST;
         this.AST = AST;
         this.HHW = HHW;
@@ -662,12 +721,12 @@ public class Statistic extends Model {
         this.HS = HS;
     }
 
-    public int getAS() {
-        return AS;
+    public int getASHOTS() {
+        return ASHOTS;
     }
 
-    public void setAS(int AS) {
-        this.AS = AS;
+    public void setASHOTS(int ASHOTS) {
+        this.ASHOTS = ASHOTS;
     }
 
     public int getHST() {
