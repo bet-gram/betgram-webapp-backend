@@ -4,7 +4,7 @@
 		module="betgram-webapp-backend-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20151108094607"
+		publication="20151108095024"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
