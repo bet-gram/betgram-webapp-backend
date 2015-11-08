@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/conf/routes
-// @DATE:Sun Nov 08 10:24:52 COT 2015
+// @DATE:Sun Nov 08 10:30:47 COT 2015
 
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
 import play.core.routing.{ HandlerDef, ReverseRouteContext, queryString, dynamicString }
