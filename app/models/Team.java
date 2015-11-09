@@ -2,14 +2,17 @@ package models;
 
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.databind.JsonNode;
-
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by scvalencia606 on 11/8/15.
  */
+
+@Entity
 public class Team extends Model {
 
     @Id
@@ -19,11 +22,16 @@ public class Team extends Model {
 
     public List<String> nicknames;
 
+    @OneToOne
     public Ground ground;
 
     public String website;
 
     public String logo;
+
+    public static Finder<String, Team> find = new Finder<String, Team>(
+            String.class, Team.class
+    );
 
     public Team() {
     }
@@ -84,4 +92,5 @@ public class Team extends Model {
     public void setLogo(String logo) {
         this.logo = logo;
     }
+
 }
