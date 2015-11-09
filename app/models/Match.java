@@ -34,27 +34,37 @@ public class Match extends Model {
 
     public String image;
 
-    public Match(Date date, Team home, Team away, int homeGoals, int awayGoals, char winner, String location, String image) {
-        this.date = date;
-        this.home = home;
-        this.away = away;
-        this.homeGoals = homeGoals;
-        this.awayGoals = awayGoals;
-        this.winner = winner;
-        this.location = location;
+    public boolean past;
+
+    public Match() {
+    }
+
+    public static Match create(Date date, Team home, Team away, int homeGoals, int awayGoals) {
+        Match object = new Match();
+
+        object.date = date;
+        object.home = home;
+        object.away = away;
+        object.homeGoals = homeGoals;
+        object.awayGoals = awayGoals;
+        object.winner = ((homeGoals > awayGoals) ? 'H' : ((homeGoals < awayGoals) ? 'A' : 'D' ));
+        object.location = home.ground.getCity();
+        object.past = (homeGoals == -1 && awayGoals == -1) ? false : true;
 
         String matchCode = "";
 
-        if (this.winner == 'H') {
+        if (object.winner == 'H') {
             matchCode = away.getBetgramCode() + "_" + home.getBetgramCode();
-            this.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/winner/" + matchCode + ".png";
-        } else if (this.winner == 'A') {
+            object.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/winner/" + matchCode + ".png";
+        } else if (object.winner == 'A') {
             matchCode = home.getBetgramCode() + "_" + away.getBetgramCode();
-            this.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/winner/" + matchCode + ".png";
+            object.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/winner/" + matchCode + ".png";
         } else {
             matchCode = away.getBetgramCode() + "_" + home.getBetgramCode();
-            this.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/draw/" + matchCode + ".png";
+            object.image = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/matches/draw/" + matchCode + ".png";
         }
+
+        return object;
     }
 
     public Date getDate() {
@@ -119,6 +129,14 @@ public class Match extends Model {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public boolean isPast() {
+        return past;
+    }
+
+    public void setPast(boolean past) {
+        this.past = past;
     }
 
     public Long getId() {
