@@ -3,6 +3,9 @@ import play.*;
 import play.libs.*;
 import com.avaje.ebean.Ebean;
 import models.*;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -219,5 +222,117 @@ public class Global extends GlobalSettings {
 
         Team t20 = Team.create("westham", "West Ham United F.C.", nicknames20, e20, "http://www.whufc.com/");
         t20.save();
+
+
+        // Date date, Team home, Team away, int homeGoals, int awayGoals)
+        String date = "2015-11-07";
+        SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
+        Date lastDate = null;
+
+        try {
+            lastDate = ft.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Match m01 = Match.create(lastDate, t04, t12, 0, 1);
+        m01.save();
+
+        Match m02 = Match.create(lastDate, t08, t19, 2, 1);
+        m02.save();
+
+        Match m03 = Match.create(lastDate, t16, t14, 0, 1);
+        m03.save();
+
+        Match m04 = Match.create(lastDate, t15, t05, 1, 0);
+        m04.save();
+
+        Match m05 = Match.create(lastDate, t20, t07, 1, 1);
+        m05.save();
+
+        Match m06 = Match.create(lastDate, t13, t17, 1, 0);
+        m06.save();
+
+        Match m07 = Match.create(lastDate, t11, t01, 2, 0);
+        m07.save();
+
+        date = "2015-11-08";
+        ft = new SimpleDateFormat("yyyy-MM-dd");
+        lastDate = null;
+
+        try {
+            lastDate = ft.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Match m08 = Match.create(lastDate, t03, t10, 0, 0);
+        m08.save();
+
+        Match m09 = Match.create(lastDate, t02, t18, 1, 1);
+        m09.save();
+
+        Match m10 = Match.create(lastDate, t09, t06, 1, 2);
+        m10.save();
+
+        date = "2015-11-21";
+        ft = new SimpleDateFormat("yyyy-MM-dd");
+        lastDate = null;
+
+        try {
+            lastDate = ft.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Match m11 = Match.create(lastDate, t19, t11, -1, -1);
+        m11.save();
+
+        Match m12 = Match.create(lastDate, t01, t02, -1, -1);
+        m12.save();
+
+        Match m13 = Match.create(lastDate, t07, t03, -1, -1);
+        m13.save();
+
+        Match m14 = Match.create(lastDate, t14, t15, -1, -1);
+        m14.save();
+
+        Match m15 = Match.create(lastDate, t05, t13, -1, -1);
+        m15.save();
+
+        Match m16 = Match.create(lastDate, t17, t04, -1, -1);
+        m16.save();
+
+        Match m17 = Match.create(lastDate, t12, t08, -1, -1);
+        m17.save();
+
+        Match m18 = Match.create(lastDate, t10, t09, -1, -1);
+        m18.save();
+
+        date = "2015-11-22";
+        ft = new SimpleDateFormat("yyyy-MM-dd");
+        lastDate = null;
+
+        try {
+            lastDate = ft.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Match m19 = Match.create(lastDate, t18, t20, -1, -1);
+        m19.save();
+
+        date = "2015-11-23";
+        ft = new SimpleDateFormat("yyyy-MM-dd");
+        lastDate = null;
+
+        try {
+            lastDate = ft.parse(date);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+        Match m20 = Match.create(lastDate, t06, t16, -1, -1);
+        m20.save();
     }
 }
