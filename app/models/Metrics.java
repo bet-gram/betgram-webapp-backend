@@ -2,27 +2,29 @@ package models;
 
 import com.avaje.ebean.Model;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
 /**
  * Created by scvalencia606 on 11/8/15.
  */
+
+@Entity
 public class Metrics extends Model {
 
     @Id
-    public Team team;
+    public String team;
 
-    public Long followerCount;
+    public int followerCount;
 
-    public Long retweetCount;
+    public int retweetCount;
 
-    @Column(columnDefinition = "REAL")
-    public double weightedRetweetIndex;
+    public int weightedRetweetIndex;
 
     public Metrics() {
     }
 
-    public Metrics create(Team team, Long followerCount, Long retweetCount, double weightedRetweetIndex) {
+    public static Metrics create(String team, int followerCount, int retweetCount, int weightedRetweetIndex) {
         Metrics object = new Metrics();
 
         object.team = team;
@@ -33,31 +35,31 @@ public class Metrics extends Model {
         return object;
     }
 
-    public Team getTeam() {
+    public String getTeam() {
         return team;
     }
 
-    public Long getFollowerCount() {
+    public int getFollowerCount() {
         return followerCount;
     }
 
-    public void setFollowerCount(Long followerCount) {
+    public void setFollowerCount(int followerCount) {
         this.followerCount = followerCount;
     }
 
-    public Long getRetweetCount() {
+    public int getRetweetCount() {
         return retweetCount;
     }
 
-    public void setRetweetCount(Long retweetCount) {
+    public void setRetweetCount(int retweetCount) {
         this.retweetCount = retweetCount;
     }
 
-    public double getWeightedRetweetIndex() {
+    public int getWeightedRetweetIndex() {
         return weightedRetweetIndex;
     }
 
-    public void setWeightedRetweetIndex(double weightedRetweetIndex) {
+    public void setWeightedRetweetIndex(int weightedRetweetIndex) {
         this.weightedRetweetIndex = weightedRetweetIndex;
     }
 }
