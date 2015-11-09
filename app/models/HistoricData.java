@@ -10,6 +10,7 @@ import javax.persistence.Id;
 /**
  * Created by Meili on 8/11/15.
  */
+
 @Entity
 public class HistoricData extends Model {
 
@@ -19,7 +20,7 @@ public class HistoricData extends Model {
     public static final int MINIMUM = 20;
 
     @Id
-    private Long Id;
+    private String id;
 
     /**
      * date value 100*year + 10*month + day
@@ -68,6 +69,13 @@ public class HistoricData extends Model {
     @Column(columnDefinition = "REAL")
     private double AMPA;
 
+    public static Finder<String, HistoricData> find = new Finder<String, HistoricData>(
+            String.class, HistoricData.class
+    );
+
+    public HistoricData() {
+    }
+
     /**
      *
      * @param dateValue
@@ -80,24 +88,25 @@ public class HistoricData extends Model {
      * @param AMPH
      * @param AMPA
      */
-    public HistoricData(int dateValue, String hometeam, String awayteam, int FTHG, int FTAG, int FTHC, int FTAC, double AMPH, double AMPA) {
-        this.dateValue = dateValue;
-        this.hometeam = hometeam;
-        this.awayteam = awayteam;
-        this.FTHG = FTHG;
-        this.FTAG = FTAG;
-        this.FTHC = FTHC;
-        this.FTAC = FTAC;
-        this.AMPH = AMPH;
-        this.AMPA = AMPA;
+    public static HistoricData create(int dateValue, String hometeam, String awayteam, int FTHG, int FTAG, int FTHC, int FTAC, double AMPH, double AMPA) {
+        HistoricData object = new HistoricData();
+
+        object.dateValue = dateValue;
+        object.hometeam = hometeam;
+        object.awayteam = awayteam;
+        object.id = hometeam + "_" + awayteam;
+        object.FTHG = FTHG;
+        object.FTAG = FTAG;
+        object.FTHC = FTHC;
+        object.FTAC = FTAC;
+        object.AMPH = AMPH;
+        object.AMPA = AMPA;
+
+        return object;
     }
 
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
+    public String getId() {
+        return this.id;
     }
 
     public int getDateValue() {
