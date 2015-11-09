@@ -7,12 +7,13 @@ import javax.persistence.*;
 /**
  * Created by scvalencia606 on 5/11/15.
  */
+
 @Entity
 public class Ground extends Model {
 
 	@Id
 	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	private Long Id;
+	private Long id;
 
 	/**
 	 * name
@@ -41,6 +42,10 @@ public class Ground extends Model {
 	 */
 	private int capacity;
 
+    public static Finder<Long, Ground> find = new Finder<Long, Ground>(
+            Long.class, Ground.class
+    );
+
 	public Ground() {
 	}
 
@@ -56,7 +61,11 @@ public class Ground extends Model {
 		return groundObject;
 	}
 
-	public String getName() {
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
 		return name;
 	}
 
