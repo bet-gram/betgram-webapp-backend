@@ -564,6 +564,66 @@ public class Global extends GlobalSettings {
         team = (Team) new Model.Finder(String.class,  Team.class).byId("swansea");
         Metrics me20 = Metrics.create(team.getBetgramCode(), 426529, 232, 10);
         me20.save();
+
+        HistoricData data1 = new HistoricData("albion", 15, 26, 0.8);
+        data1.save();
+
+        HistoricData data2 = new HistoricData("arsenal", 37, 214, 2.25);
+        data2.save();
+
+        HistoricData data3 = new HistoricData("aston_villa", 20, 35, 0.9);
+        data3.save();
+
+        HistoricData data4 = new HistoricData("bournemouth", 0, 0, 0.0);
+        data4.save();
+
+        HistoricData data5 = new HistoricData("chelsea", 32, 18, 2.1);
+        data5.save();
+
+        HistoricData data6 = new HistoricData("crystal", 27, 24, 1.5);
+        data6.save();
+
+        HistoricData data7 = new HistoricData("everton", 21, 22, 1.3);
+        data7.save();
+
+        HistoricData data8 = new HistoricData("leicester", 26, 25, 1.4);
+        data8.save();
+
+        HistoricData data9 = new HistoricData("liverpool", 30, 18, 2.0);
+        data9.save();
+
+        HistoricData data10 = new HistoricData("manchester_city", 45, 24, 1.85);
+        data10.save();
+
+        HistoricData data11 = new HistoricData("manchester_united", 32, 19, 1.85);
+        data11.save();
+
+        HistoricData data12 = new HistoricData("newcastle", 20, 40, 0.65);
+        data12.save();
+
+        HistoricData data13 = new HistoricData("southampton", 26, 18, 1.55);
+        data13.save();
+
+        HistoricData data14 = new HistoricData("stoke", 24, 21, 1.6);
+        data14.save();
+
+        HistoricData data15 = new HistoricData("sunderland", 15, 26, 0.95);
+        data15.save();
+
+        HistoricData data16 = new HistoricData("swansea", 24, 29, 1.55);
+        data16.save();
+
+        HistoricData data17 = new HistoricData("tottenham", 35, 30, 1.7);
+        data17.save();
+
+        HistoricData data18 = new HistoricData("west_brom", 18, 21, 1.3);
+        data18.save();
+
+        HistoricData data19 = new HistoricData("watford", 17, 36, 0.8);
+        data19.save();
+
+        HistoricData data20 = new HistoricData("westham", 0, 0, 0.0);
+        data20.save();
     }
 
 }

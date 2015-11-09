@@ -36,12 +36,17 @@ public class Application extends Controller {
         Team home = (Team) new Model.Finder(String.class, Team.class).byId(homeTeamBetgramCode);
         Team away = (Team) new Model.Finder(String.class, Team.class).byId(awayTeamBetgramCode);
 
-        FTHG = 6.0;
-        FTAG = 5.0;
-        FTHC = 4.0;
-        FTAC = 3.0;
-        AMPH = 12.0;
-        AMPA = 4.5;
+        HistoricData homeData = (HistoricData) new Model.Finder(String.class, HistoricData.class).byId(homeTeamBetgramCode);
+        HistoricData awayData = (HistoricData) new Model.Finder(String.class, HistoricData.class).byId(awayTeamBetgramCode);
+
+
+        FTHG = homeData.getGS();
+        FTHC = homeData.getGC();
+        AMPH = homeData.getANP();
+
+        FTAG = awayData.getGS();
+        FTAC = awayData.getGC();
+        AMPA = awayData.getANP();
 
         match = new Match();
         match.setHome(home);

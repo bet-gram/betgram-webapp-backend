@@ -23,17 +23,11 @@ create table ground (
 ;
 
 create table historic_data (
-  id                        varchar(255) not null,
-  date_value                integer,
-  hometeam                  varchar(255),
-  awayteam                  varchar(255),
-  fthg                      integer,
-  ftag                      integer,
-  fthc                      integer,
-  ftac                      integer,
-  amph                      REAL,
-  ampa                      REAL,
-  constraint pk_historic_data primary key (id))
+  team                      varchar(255) not null,
+  gs                        integer,
+  gc                        integer,
+  anp                       REAL,
+  constraint pk_historic_data primary key (team))
 ;
 
 create table match (
