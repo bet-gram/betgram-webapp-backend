@@ -2,15 +2,13 @@ package models;
 
 import com.avaje.ebean.Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 /**
  * Created by scvalencia606 on 11/8/15.
  */
+
 @Entity
 public class Match extends Model {
 
@@ -20,8 +18,10 @@ public class Match extends Model {
 
     public Date date;
 
+    @ManyToOne
     public Team home;
 
+    @ManyToOne
     public Team away;
 
     public int homeGoals;
@@ -39,7 +39,7 @@ public class Match extends Model {
     public Match() {
     }
 
-    public static Match create(Date date, Team home, Team away, int homeGoals, int awayGoals) {
+    public static Match create(Date date, Team home, Team away, int homeGoals, int awayGoals, String city) {
         Match object = new Match();
 
         object.date = date;
@@ -48,7 +48,7 @@ public class Match extends Model {
         object.homeGoals = homeGoals;
         object.awayGoals = awayGoals;
         object.winner = ((homeGoals > awayGoals) ? 'H' : ((homeGoals < awayGoals) ? 'A' : 'D' ));
-        object.location = home.ground.getCity();
+        object.location = city;
         object.past = (homeGoals == -1 && awayGoals == -1) ? false : true;
 
         String matchCode = "";
