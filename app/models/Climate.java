@@ -3,6 +3,8 @@ package models;
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.databind.JsonNode;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +12,7 @@ import java.util.List;
 public class Climate extends Model {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	public Long id;
 	
     public String weather;
@@ -45,8 +47,8 @@ public class Climate extends Model {
         return feelslike;
     }
 
-    public String getWind {
-        return wind;
+    public String getWind() {
+        return this.wind;
     }
 
     public void setWeather(String weather) {
