@@ -1,5 +1,6 @@
 package controllers;
 
+import actions.CorsComposition;
 import models.*;
 import play.db.ebean.Model;
 import play.libs.Json;
@@ -10,6 +11,7 @@ import views.html.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CorsComposition.Cors
 public class Application extends Controller {
 
     public Match match;
