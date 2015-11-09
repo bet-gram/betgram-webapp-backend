@@ -3,17 +3,18 @@ package models;
 import com.avaje.ebean.Model;
 import com.fasterxml.jackson.databind.JsonNode;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class Climate extends Model {
 
 	@Id
-	@GeneratedValue(strategy= GenerationType.IDENTITY)
-	public Long id;
+    public String city;
 	
     public String weather;
 
@@ -23,16 +24,31 @@ public class Climate extends Model {
 
     public String wind;
 
+    public static Finder<String, Climate> find = new Finder<String, Climate>(
+            String.class, Climate.class
+    );
+
     public Climate() {
     }
 
-    public static Climate create(String weather, String temp, String feelslike, String wind) {
+    public static Climate create(String city, String weather, String temp, String feelslike, String wind) {
         Climate climateObject = new Climate();
+
+        climateObject.city = city;
         climateObject.weather = weather;
         climateObject.temp = temp;
         climateObject.feelslike = feelslike;
         climateObject.wind = wind;
+
         return climateObject;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getWeather() {
