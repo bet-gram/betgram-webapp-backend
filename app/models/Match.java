@@ -1,6 +1,7 @@
 package models;
 
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -16,6 +17,7 @@ public class Match extends Model {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     public Long id;
 
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd hh:mm:ss")
     public Date date;
 
     @ManyToOne
@@ -35,6 +37,10 @@ public class Match extends Model {
     public String image;
 
     public boolean past;
+
+    public static Finder<Long, Match> find = new Finder<Long, Match>(
+            Long.class, Match.class
+    );
 
     public Match() {
     }

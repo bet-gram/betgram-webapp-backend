@@ -84,14 +84,14 @@ public class Global extends GlobalSettings {
         nicknames01.add("Albion");
 
 
-        Team t01 = Team.create("albion", "Albion F.C.", nicknames01, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e01.getId()), "http://www.wba.co.uk");
+        Team t01 = Team.create("albion", "Albion F.C.", nicknames01, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e19.getId()), "http://www.wba.co.uk");
 
         t01.save();
 
         List<String> nicknames02 = new ArrayList<String>();
         nicknames02.add("The Gunners");
 
-        Team t02 = Team.create("arsenal", "Arsenal F.C.", nicknames02, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e02.getId()), "http://www.arsenal.com/home");
+        Team t02 = Team.create("arsenal", "Arsenal F.C.", nicknames02, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e01.getId()), "http://www.arsenal.com/home");
         t02.save();
 
         List<String> nicknames03 = new ArrayList<String>();
@@ -100,27 +100,27 @@ public class Global extends GlobalSettings {
         nicknames03.add("The Lions");
         nicknames03.add("The Claret and Blue Army");
 
-        Team t03 = Team.create("aston_villa", "Aston Villa F.C.", nicknames03, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e03.getId()), "http://www.avfc.co.uk/");
+        Team t03 = Team.create("aston_villa", "Aston Villa F.C.", nicknames03, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e02.getId()), "http://www.avfc.co.uk/");
         t03.save();
 
         List<String> nicknames04 = new ArrayList<String>();
         nicknames04.add("The Cherries");
         nicknames04.add("Boscombe");
 
-        Team t04 = Team.create("bournemouth", "A.F.C. Bournemouth", nicknames04, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e04.getId()), "http://www.afcb.co.uk/");
+        Team t04 = Team.create("bournemouth", "A.F.C. Bournemouth", nicknames04, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e03.getId()), "http://www.afcb.co.uk/");
         t04.save();
 
         List<String> nicknames05 = new ArrayList<String>();
         nicknames05.add("The Blues");
         nicknames05.add("The Pensioners");
 
-        Team t05 = Team.create("chelsea", "Chelsea F.C.", nicknames05, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e05.getId()), "http://www.chelseafc.com/");
+        Team t05 = Team.create("chelsea", "Chelsea F.C.", nicknames05, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e04.getId()), "http://www.chelseafc.com/");
         t05.save();
 
         List<String> nicknames06 = new ArrayList<String>();
         nicknames06.add("Eagles");
 
-        Team t06 = Team.create("crystal", "Crystal Palace F.C.", nicknames06, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e06.getId()), "http://www.cpfc.co.uk/");
+        Team t06 = Team.create("crystal", "Crystal Palace F.C.", nicknames06, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e05.getId()), "http://www.cpfc.co.uk/");
         t06.save();
 
         List<String> nicknames07 = new ArrayList<String>();
@@ -129,7 +129,7 @@ public class Global extends GlobalSettings {
         nicknames07.add("The School of Science");
         nicknames07.add("The People's Club");
 
-        Team t07 = Team.create("everton", "Everton F.C.", nicknames07, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e07.getId()), "http://www.evertonfc.com/");
+        Team t07 = Team.create("everton", "Everton F.C.", nicknames07, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e06.getId()), "http://www.evertonfc.com/");
         t07.save();
 
         List<String> nicknames08 = new ArrayList<String>();
@@ -138,13 +138,13 @@ public class Global extends GlobalSettings {
         nicknames08.add("City");
         nicknames08.add("Blue Army");
 
-        Team t08 = Team.create("leicester", "Leicester City F.C.", nicknames08, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e08.getId()), "http://www.lcfc.com/");
+        Team t08 = Team.create("leicester", "Leicester City F.C.", nicknames08, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e07.getId()), "http://www.lcfc.com/");
         t08.save();
 
         List<String> nicknames09 = new ArrayList<String>();
         nicknames09.add("The Reds");
 
-        Team t09 = Team.create("liverpool", "Liverpool F.C.", nicknames09, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e09.getId()), "http://www.liverpoolfc.com/");
+        Team t09 = Team.create("liverpool", "Liverpool F.C.", nicknames09, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e08.getId()), "http://www.liverpoolfc.com/");
         t09.save();
 
         List<String> nicknames10 = new ArrayList<String>();
@@ -152,19 +152,19 @@ public class Global extends GlobalSettings {
         nicknames10.add("The Citizens");
         nicknames10.add("The Sky Blues");
 
-        Team t10 = Team.create("manchester_city", "Manchester City F.C.", nicknames10, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e10.getId()), "http://www.mcfc.co.uk/");
+        Team t10 = Team.create("manchester_city", "Manchester City F.C.", nicknames10, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e09.getId()), "http://www.mcfc.co.uk/");
         t10.save();
 
         List<String> nicknames11 = new ArrayList<String>();
         nicknames11.add("The Red Devils");
 
-        Team t11 = Team.create("manchester_united", "Manchester United F.C.", nicknames11, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e11.getId()), "http://www.manutd.com/");
+        Team t11 = Team.create("manchester_united", "Manchester United F.C.", nicknames11, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e10.getId()), "http://www.manutd.com/");
         t11.save();
 
         List<String> nicknames12 = new ArrayList<String>();
         nicknames12.add("The Magpies");
 
-        Team t12 = Team.create("newcastle", "Newcastle United F.C.", nicknames12, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e12.getId()), "http://www.nufc.co.uk/page/Welcome/");
+        Team t12 = Team.create("newcastle", "Newcastle United F.C.", nicknames12, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e11.getId()), "http://www.nufc.co.uk/page/Welcome/");
         t12.save();
 
         List<String> nicknames13 = new ArrayList<String>();
@@ -172,32 +172,32 @@ public class Global extends GlobalSettings {
         nicknames13.add("Yellows");
         nicknames13.add("The Citizens");
 
-        Team t13 = Team.create("norwich", "Norwich City F.C.", nicknames13, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e13.getId()), "http://www.canaries.co.uk/");
+        Team t13 = Team.create("norwich", "Norwich City F.C.", nicknames13, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e12.getId()), "http://www.canaries.co.uk/");
         t13.save();
 
         List<String> nicknames14 = new ArrayList<String>();
         nicknames14.add("The Saints");
 
-        Team t14 = Team.create("southampton", "Southampton F.C.", nicknames14, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e14.getId()), "http://www.saintsfc.co.uk/");
+        Team t14 = Team.create("southampton", "Southampton F.C.", nicknames14, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e13.getId()), "http://www.saintsfc.co.uk/");
         t14.save();
 
         List<String> nicknames15 = new ArrayList<String>();
         nicknames15.add("The Potters");
 
-        Team t15 = Team.create("stoke", "Stoke City F.C.", nicknames15, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e15.getId()), "http://www.stokecityfc.com/");
+        Team t15 = Team.create("stoke", "Stoke City F.C.", nicknames15, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e14.getId()), "http://www.stokecityfc.com/");
         t15.save();
 
         List<String> nicknames16 = new ArrayList<String>();
         nicknames16.add("The Black Cats");
 
-        Team t16 = Team.create("sunderland", "Sunderland A.F.C.", nicknames16, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e16.getId()), "http://www.safc.com/");
+        Team t16 = Team.create("sunderland", "Sunderland A.F.C.", nicknames16, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e15.getId()), "http://www.safc.com/");
         t16.save();
 
         List<String> nicknames17 = new ArrayList<String>();
         nicknames17.add("The Swans");
         nicknames17.add("The Jacks");
 
-        Team t17 = Team.create("swansea", "Swansea City A.F.C.", nicknames17, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e17.getId()), "http://www.swanseacity.net/");
+        Team t17 = Team.create("swansea", "Swansea City A.F.C.", nicknames17, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e16.getId()), "http://www.swanseacity.net/");
         t17.save();
 
         List<String> nicknames18 = new ArrayList<String>();
@@ -205,7 +205,7 @@ public class Global extends GlobalSettings {
         nicknames18.add("The Lilywhites");
 
 
-        Team t18 = Team.create("tottenham", "Tottenham Hotspur F.C.", nicknames18, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e18.getId()), "http://www.tottenhamhotspur.com/");
+        Team t18 = Team.create("tottenham", "Tottenham Hotspur F.C.", nicknames18, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e17.getId()), "http://www.tottenhamhotspur.com/");
         t18.save();
 
         List<String> nicknames19 = new ArrayList<String>();
@@ -214,7 +214,7 @@ public class Global extends GlobalSettings {
         nicknames19.add("Yellow Army");
         nicknames19.add("The 'Orns");
 
-        Team t19 = Team.create("watford", "Watford F.C.", nicknames19, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e19.getId()), "http://www.watfordfc.com/");
+        Team t19 = Team.create("watford", "Watford F.C.", nicknames19, (Ground) new Ground.Finder(Long.class, Ground.class).byId(e18.getId()), "http://www.watfordfc.com/");
         t19.save();
 
         List<String> nicknames20 = new ArrayList<String>();
@@ -243,7 +243,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("bournemouth");
         away = (Team) new Model.Finder(String.class, Team.class).byId("newcastle");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e04.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e03.getId());
         city = place.getCity();
 
         Match m01 = Match.create(lastDate, home, away, 0, 1, city);
@@ -251,7 +251,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("leicester");
         away = (Team) new Model.Finder(String.class, Team.class).byId("watford");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e08.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e07.getId());
         city = place.getCity();
 
         Match m02 = Match.create(lastDate, home, away, 2, 1, city);
@@ -259,7 +259,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("sunderland");
         away = (Team) new Model.Finder(String.class, Team.class).byId("southampton");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e16.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e15.getId());
         city = place.getCity();
 
         Match m03 = Match.create(lastDate, home, away, 0, 1, city);
@@ -267,7 +267,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("stoke");
         away = (Team) new Model.Finder(String.class, Team.class).byId("chelsea");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e15.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e14.getId());
         city = place.getCity();
 
         Match m04 = Match.create(lastDate, home, away, 1, 0, city);
@@ -283,7 +283,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("norwich");
         away = (Team) new Model.Finder(String.class, Team.class).byId("swansea");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e13.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e12.getId());
         city = place.getCity();
 
         Match m06 = Match.create(lastDate, home, away, 1, 0, city);
@@ -291,7 +291,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("manchester_united");
         away = (Team) new Model.Finder(String.class, Team.class).byId("albion");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e11.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e10.getId());
         city = place.getCity();
 
         Match m07 = Match.create(lastDate, home, away, 2, 0, city);
@@ -309,7 +309,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("aston_villa");
         away = (Team) new Model.Finder(String.class, Team.class).byId("manchester_city");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e03.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e02.getId());
         city = place.getCity();
 
         Match m08 = Match.create(lastDate, home, away, 0, 0, city);
@@ -317,7 +317,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("arsenal");
         away = (Team) new Model.Finder(String.class, Team.class).byId("tottenham");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e02.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e01.getId());
         city = place.getCity();
 
         Match m09 = Match.create(lastDate, home, away, 1, 1, city);
@@ -325,7 +325,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("liverpool");
         away = (Team) new Model.Finder(String.class, Team.class).byId("crystal");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e09.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e08.getId());
         city = place.getCity();
 
         Match m10 = Match.create(lastDate, home, away, 1, 2, city);
@@ -343,7 +343,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("watford");
         away = (Team) new Model.Finder(String.class, Team.class).byId("manchester_united");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e19.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e18.getId());
         city = place.getCity();
 
         Match m11 = Match.create(lastDate, home, away, -1, -1, city);
@@ -351,7 +351,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("albion");
         away = (Team) new Model.Finder(String.class, Team.class).byId("arsenal");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e01.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e19.getId());
         city = place.getCity();
 
         Match m12 = Match.create(lastDate, home, away, -1, -1, city);
@@ -359,7 +359,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("everton");
         away = (Team) new Model.Finder(String.class, Team.class).byId("aston_villa");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e07.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e06.getId());
         city = place.getCity();
 
         Match m13 = Match.create(lastDate, home, away, -1, -1, city);
@@ -367,7 +367,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("southampton");
         away = (Team) new Model.Finder(String.class, Team.class).byId("stoke");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e14.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e13.getId());
         city = place.getCity();
 
         Match m14 = Match.create(lastDate, home, away, -1, -1, city);
@@ -375,7 +375,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("chelsea");
         away = (Team) new Model.Finder(String.class, Team.class).byId("norwich");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e05.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e04.getId());
         city = place.getCity();
 
         Match m15 = Match.create(lastDate, home, away, -1, -1, city);
@@ -383,7 +383,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("swansea");
         away = (Team) new Model.Finder(String.class, Team.class).byId("bournemouth");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e17.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e16.getId());
         city = place.getCity();
 
         Match m16 = Match.create(lastDate, home, away, -1, -1, city);
@@ -391,7 +391,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("newcastle");
         away = (Team) new Model.Finder(String.class, Team.class).byId("leicester");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e12.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e11.getId());
         city = place.getCity();
 
         Match m17 = Match.create(lastDate, home, away, -1, -1, city);
@@ -399,7 +399,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("manchester_city");
         away = (Team) new Model.Finder(String.class, Team.class).byId("liverpool");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e10.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e09.getId());
         city = place.getCity();
 
         Match m18 = Match.create(lastDate, home, away, -1, -1, city);
@@ -417,7 +417,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("tottenham");
         away = (Team) new Model.Finder(String.class, Team.class).byId("westham");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e18.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e17.getId());
         city = place.getCity();
 
         Match m19 = Match.create(lastDate, home, away, -1, -1, city);
@@ -435,7 +435,7 @@ public class Global extends GlobalSettings {
 
         home = (Team) new Model.Finder(String.class, Team.class).byId("crystal");
         away = (Team) new Model.Finder(String.class, Team.class).byId("sunderland");
-        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e06.getId());
+        place = (Ground) new Ground.Finder(Long.class, Ground.class).byId(e05.getId());
         city = place.getCity();
 
         Match m20 = Match.create(lastDate, home, away, -1, -1, city);

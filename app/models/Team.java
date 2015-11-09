@@ -20,8 +20,6 @@ public class Team extends Model {
 
     public String name;
 
-    public List<String> nicknames;
-
     @OneToOne
     public Ground ground;
 
@@ -41,7 +39,6 @@ public class Team extends Model {
 
         teamObject.betgramCode = betgramCode;
         teamObject.name = name;
-        teamObject.nicknames = nicknames;
         teamObject.ground = ground;
         teamObject.website = website;
         teamObject.logo = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/teams/png/color/" + betgramCode + ".png";
@@ -59,14 +56,6 @@ public class Team extends Model {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public List<String> getNicknames() {
-        return nicknames;
-    }
-
-    public void setNicknames(ArrayList<String> nicknames) {
-        this.nicknames = nicknames;
     }
 
     public Ground getGround() {

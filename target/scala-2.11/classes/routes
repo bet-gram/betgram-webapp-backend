@@ -18,8 +18,9 @@ GET         /                       controllers.Application.index()
 ########################################################################################################################
 
 
+GET         /matches                             controllers.Application.matches()
 
-
+GET         /summary/:team1/:team2               controllers.Application.summary(team1 : String, team2 : String)
 
 
 # Map static resources from the /public folder to the /assets URL path

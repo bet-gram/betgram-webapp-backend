@@ -2,6 +2,7 @@ package controllers;
 
 import models.*;
 import play.db.ebean.Model;
+import play.libs.Json;
 import play.mvc.*;
 
 import views.html.*;
@@ -24,8 +25,14 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
-    public Result getSummary(String homeTeamBetgramCode, String awayTeamBetgramCode) {
+    public Result matches() {
+        List<Match> matches = new Model.Finder(Long.class,  Match.class).all();
+        return ok(Json.toJson(matches));
+    }
+
+    public Result summary(String homeTeamBetgramCode, String awayTeamBetgramCode) {
         Team home = (Team) new Model.Finder(String.class, Team.class).byId(homeTeamBetgramCode);
+        Team away = (Team) new Model.Finder(String.class, Team.class).byId(awayTeamBetgramCode);
 
         FTHG = 6.0;
         FTAG = 5.0;
@@ -34,15 +41,29 @@ public class Application extends Controller {
         AMPH = 12.0;
         AMPA = 4.5;
 
-        String[] weights = getWeightedArray();
+        match = new Match();
+        match.setHome(home);
+        match.setAway(away);
+
+
+        Prediction prediction = getWeightedArray();
         String symbol = getMatchLogo(homeTeamBetgramCode, awayTeamBetgramCode);
-        int[] weightedIndexHome = getWeightedPopularity(homeTeamBetgramCode);
-        int[] weightedIndexAway = getWeightedPopularity(awayTeamBetgramCode);
+
+        Weight weightedIndexHome = getWeightedPopularity(homeTeamBetgramCode);
+        Weight weightedIndexAway = getWeightedPopularity(awayTeamBetgramCode);
+
+        List<Weight> weights = new ArrayList<Weight>();
+        weights.add(weightedIndexHome);
+        weights.add(weightedIndexAway);
+
         Ground ground = home.getGround();
-        String[] location = getLocation(ground);
+        Weather weather =getWeather(ground.getCity());
+        Location loc = new Location(ground.getName(), ground.getLatitude() + "", ground.getLongitude() + "", weather);
+
+        Summary summary = new Summary(prediction, symbol, weights, loc);
 
 
-        return null;
+        return ok(Json.toJson(summary));
     }
 
     public double getResult(double home, double away, double draw) {
@@ -57,12 +78,14 @@ public class Application extends Controller {
         return ans;
     }
 
-    public String[] getWeightedArray() {
+    public Prediction getWeightedArray() {
         String[] ans = new String[3];
 
         double homeResult = getHomeWeight();
         double drawResut = getDrawWeight();
         double awayResult = getAwayWeight();
+
+        getResult(homeResult, awayResult, drawResut);
 
         double summation = homeResult + drawResut + awayResult;
 
@@ -74,7 +97,8 @@ public class Application extends Controller {
         ans[1] = drawResut + "";
         ans[2] = awayResult + "";
 
-        return ans;
+        Prediction p = new Prediction(ans[0], ans[1], ans[2]);
+        return p;
     }
 
     public double getHomeWeight() {
@@ -548,7 +572,7 @@ public class Application extends Controller {
         return ans;
     }
 
-    public int[] getWeightedPopularity(String team) {
+    public Weight getWeightedPopularity(String team) {
         int[] ans = new int[3];
         Metrics metric = (Metrics) new Model.Finder(String.class, Metrics.class).byId(team);
 
@@ -556,24 +580,263 @@ public class Application extends Controller {
         ans[1] = metric.getRetweetCount();
         ans[2] = metric.getWeightedRetweetIndex();
 
-        return ans;
+        Weight w = new Weight(team, ans[0], ans[1], ans[2]);
+
+        return w;
     }
 
-    public String[] getLocation(Ground ground) {
-        String[] ans = new String[7];
+    public Weather getWeather(String city) {
+        Climate climate = (Climate) new Model.Finder(String.class, Climate.class).byId(city);
 
-        ans[0] = ground.getCity();
-        ans[1] = ground.getLatitude() + "";
-        ans[2] = ground.getLongitude() + "";
+        String[] ans = new String[4];
 
-        Climate climate = (Climate) new Model.Finder(String.class, Climate.class).byId(ans[0]);
+        ans[0] = climate.getWeather();
+        ans[1] = climate.getTemp();
+        ans[2] = climate.getFeelslike();
+        ans[3] = climate.getWind();
 
-        ans[3] = climate.getWeather();
-        ans[4] = climate.getTemp();
-        ans[5] = climate.getFeelslike();
-        ans[6] = climate.getWind();
+        Weather w = new Weather(ans[0], ans[1], ans[2], ans[3]);
 
-        return ans;
+        return w;
+    }
+
+    class Prediction {
+
+        public String home;
+
+        public String draw;
+
+        public String away;
+
+        public Prediction(String home, String draw, String away) {
+            this.home = home;
+            this.draw = draw;
+            this.away = away;
+        }
+
+        public String getHome() {
+            return home;
+        }
+
+        public void setHome(String home) {
+            this.home = home;
+        }
+
+        public String getDraw() {
+            return draw;
+        }
+
+        public void setDraw(String draw) {
+            this.draw = draw;
+        }
+
+        public String getAway() {
+            return away;
+        }
+
+        public void setAway(String away) {
+            this.away = away;
+        }
+    }
+
+    class Weight {
+
+        public String team;
+
+        public int follower_count;
+
+        public int retweet_count;
+
+        public int weighted_retweet_index;
+
+        public Weight(String team, int follower_count, int retweet_count, int weighted_retweet_index) {
+            this.team = team;
+            this.follower_count = follower_count;
+            this.retweet_count = retweet_count;
+            this.weighted_retweet_index = weighted_retweet_index;
+        }
+
+        public String getTeam() {
+            return team;
+        }
+
+        public void setTeam(String team) {
+            this.team = team;
+        }
+
+        public int getFollower_count() {
+            return follower_count;
+        }
+
+        public void setFollower_count(int follower_count) {
+            this.follower_count = follower_count;
+        }
+
+        public int getRetweet_count() {
+            return retweet_count;
+        }
+
+        public void setRetweet_count(int retweet_count) {
+            this.retweet_count = retweet_count;
+        }
+
+        public int getWeighted_retweet_index() {
+            return weighted_retweet_index;
+        }
+
+        public void setWeighted_retweet_index(int weighted_retweet_index) {
+            this.weighted_retweet_index = weighted_retweet_index;
+        }
+    }
+
+    class Weather {
+
+        public String weather;
+
+        public String temp;
+
+        public String feelslike;
+
+        public String wind;
+
+        public Weather(String weather, String temp, String feelslike, String wind) {
+            this.weather = weather;
+            this.temp = temp;
+            this.feelslike = feelslike;
+            this.wind = wind;
+        }
+
+        public String getWeather() {
+            return weather;
+        }
+
+        public void setWeather(String weather) {
+            this.weather = weather;
+        }
+
+        public String getTemp() {
+            return temp;
+        }
+
+        public void setTemp(String temp) {
+            this.temp = temp;
+        }
+
+        public String getFeelslike() {
+            return feelslike;
+        }
+
+        public void setFeelslike(String feelslike) {
+            this.feelslike = feelslike;
+        }
+
+        public String getWind() {
+            return wind;
+        }
+
+        public void setWind(String wind) {
+            this.wind = wind;
+        }
+    }
+
+    class Location {
+
+        public String ground;
+
+        public String latitude;
+
+        public String longitude;
+
+        public Weather climate;
+
+        public Location(String ground, String latitude, String longitude, Weather climate) {
+            this.ground = ground;
+            this.latitude = latitude;
+            this.longitude = longitude;
+            this.climate = climate;
+        }
+
+        public String getGround() {
+            return ground;
+        }
+
+        public void setGround(String ground) {
+            this.ground = ground;
+        }
+
+        public String getLatitude() {
+            return latitude;
+        }
+
+        public void setLatitude(String latitude) {
+            this.latitude = latitude;
+        }
+
+        public String getLongitude() {
+            return longitude;
+        }
+
+        public void setLongitude(String longitude) {
+            this.longitude = longitude;
+        }
+
+        public Weather getClimate() {
+            return climate;
+        }
+
+        public void setClimate(Weather climate) {
+            this.climate = climate;
+        }
+    }
+
+    class Summary {
+
+        public Prediction prediction;
+
+        public String logo;
+
+        public List<Weight> weights;
+
+        public Location location;
+
+        public Summary(Prediction prediction, String logo, List<Weight> weights, Location location) {
+            this.prediction = prediction;
+            this.logo = logo;
+            this.weights = weights;
+            this.location = location;
+        }
+
+        public Prediction getPrediction() {
+            return prediction;
+        }
+
+        public void setPrediction(Prediction prediction) {
+            this.prediction = prediction;
+        }
+
+        public String getLogo() {
+            return logo;
+        }
+
+        public void setLogo(String logo) {
+            this.logo = logo;
+        }
+
+        public List<Weight> getWeights() {
+            return weights;
+        }
+
+        public void setWeights(List<Weight> weights) {
+            this.weights = weights;
+        }
+
+        public Location getLocation() {
+            return location;
+        }
+
+        public void setLocation(Location location) {
+            this.location = location;
+        }
     }
 
 

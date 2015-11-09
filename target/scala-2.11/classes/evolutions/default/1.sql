@@ -23,7 +23,7 @@ create table ground (
 ;
 
 create table historic_data (
-  id                        bigserial not null,
+  id                        varchar(255) not null,
   date_value                integer,
   hometeam                  varchar(255),
   awayteam                  varchar(255),
@@ -52,9 +52,9 @@ create table match (
 
 create table metrics (
   team                      varchar(255) not null,
-  follower_count            bigint,
-  retweet_count             bigint,
-  weighted_retweet_index    REAL,
+  follower_count            integer,
+  retweet_count             integer,
+  weighted_retweet_index    integer,
   constraint pk_metrics primary key (team))
 ;
 

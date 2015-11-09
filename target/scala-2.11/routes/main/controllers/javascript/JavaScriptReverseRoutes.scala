@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/conf/routes
-// @DATE:Mon Nov 09 06:18:50 COT 2015
+// @DATE:Mon Nov 09 10:36:03 COT 2015
 
 import play.api.routing.JavaScriptReverseRoute
 import play.api.mvc.{ QueryStringBindable, PathBindable, Call, JavascriptLiteral }
@@ -15,7 +15,7 @@ import _root_.play.libs.F
 package controllers.javascript {
   import ReverseRouteContext.empty
 
-  // @LINE:26
+  // @LINE:27
   class ReverseAssets(_prefix: => String) {
 
     def _defaultPrefix: String = {
@@ -23,7 +23,7 @@ package controllers.javascript {
     }
 
   
-    // @LINE:26
+    // @LINE:27
     def versioned: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.Assets.versioned",
       """
@@ -42,6 +42,26 @@ package controllers.javascript {
       if (_prefix.endsWith("/")) "" else "/"
     }
 
+  
+    // @LINE:23
+    def summary: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.summary",
+      """
+        function(team1,team2) {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "summary/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("team1", encodeURIComponent(team1)) + "/" + (""" + implicitly[PathBindable[String]].javascriptUnbind + """)("team2", encodeURIComponent(team2))})
+        }
+      """
+    )
+  
+    // @LINE:21
+    def matches: JavaScriptReverseRoute = JavaScriptReverseRoute(
+      "controllers.Application.matches",
+      """
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "matches"})
+        }
+      """
+    )
   
     // @LINE:6
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
