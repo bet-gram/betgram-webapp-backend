@@ -1,0 +1,87 @@
+package models;
+
+import com.avaje.ebean.Model;
+import com.fasterxml.jackson.databind.JsonNode;
+
+import javax.persistence.Id;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by scvalencia606 on 11/8/15.
+ */
+public class Team extends Model {
+
+    @Id
+    public String betgramCode;
+
+    public String name;
+
+    public List<String> nicknames;
+
+    public Ground ground;
+
+    public String website;
+
+    public String logo;
+
+    public Team() {
+    }
+
+    public static Team create(String betgramCode, String name, List<String> nicknames, Ground ground, String website) {
+        Team teamObject = new Team();
+
+        teamObject.betgramCode = betgramCode;
+        teamObject.name = name;
+        teamObject.nicknames = nicknames;
+        teamObject.ground = ground;
+        teamObject.website = website;
+        teamObject.logo = "https://s3-us-west-2.amazonaws.com/betgram-main/logos/england/premier-league/teams/png/color/" + betgramCode + ".png";
+
+        return teamObject;
+    }
+
+    public String getBetgramCode() {
+        return betgramCode;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<String> getNicknames() {
+        return nicknames;
+    }
+
+    public void setNicknames(ArrayList<String> nicknames) {
+        this.nicknames = nicknames;
+    }
+
+    public Ground getGround() {
+        return ground;
+    }
+
+    public void setGround(Ground ground) {
+        this.ground = ground;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    public String getLogo() {
+        return logo;
+    }
+
+    public void setLogo(String logo) {
+        this.logo = logo;
+    }
+}

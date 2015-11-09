@@ -1,18 +1,17 @@
 package models;
 
 import com.avaje.ebean.Model;
-
-import java.util.Date;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.fasterxml.jackson.databind.JsonNode;
+import javax.persistence.*;
 
 /**
- * Created by Meili on 5/11/15.
+ * Created by scvalencia606 on 5/11/15.
  */
 @Entity
 public class Ground extends Model {
 
 	@Id
+	@GeneratedValue(strategy= GenerationType.IDENTITY)
 	private Long Id;
 
 	/**
@@ -23,152 +22,77 @@ public class Ground extends Model {
 	/**
 	 * city
 	 */
-	private City city;
+	private String city;
 
 	/**
-	 * owner
+	 * latitude
 	 */
-	private Club owner;
+	@Column(columnDefinition = "REAL")
+	private double latitude;
 
 	/**
-	 * operator
+	 * longitude
 	 */
-	private Club operator;
+	@Column(columnDefinition = "REAL")
+	private double longitude;
 
 	/**
 	 * capacity
 	 */
 	private int capacity;
 
-	/**
-	 * recordAttendance
-	 */
-	private int recordAttendance;
-
-	/**
-	 * opened
-	 */
-	private Date opened;
-
-	/**
-	 * @param name
-	 * @param city
-	 * @param owner
-	 * @param operator
-	 * @param capacity
-	 * @param recordAttendance
-	 * @param opened
-	 */
-	public Ground(String name, City city, Club owner, Club operator, int capacity, int recordAttendance, Date opened) {
-		this.name = name;
-		this.city = city;
-		this.owner = owner;
-		this.operator = operator;
-		this.capacity = capacity;
-		this.recordAttendance = recordAttendance;
-		this.opened = opened;
+	public Ground() {
 	}
 
-	/**
-	 * @return the name
-	 */
+	public static Ground create(String name, String city, double latitude, double longitude, int capacity) {
+		Ground groundObject = new Ground();
+
+		groundObject.name = name;
+		groundObject.city = city;
+		groundObject.latitude = latitude;
+		groundObject.longitude = longitude;
+		groundObject.capacity = capacity;
+
+		return groundObject;
+	}
+
 	public String getName() {
 		return name;
 	}
 
-	/**
-	 * @return the city
-	 */
-	public City getCity() {
-		return city;
-	}
-
-	/**
-	 * @return the owner
-	 */
-	public Club getOwner() {
-		return owner;
-	}
-
-	/**
-	 * @return the operator
-	 */
-	public Club getOperator() {
-		return operator;
-	}
-
-	/**
-	 * @return the capacity
-	 */
-	public int getCapacity() {
-		return capacity;
-	}
-
-	/**
-	 * @return the recordAttendance
-	 */
-	public int getRecordAttendance() {
-		return recordAttendance;
-	}
-
-	/**
-	 * @return the opened
-	 */
-	public Date getOpened() {
-		return opened;
-	}
-
-	/**
-	 * @param name the name to set
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
-	/**
-	 * @param city the city to set
-	 */
-	public void setCity(City city) {
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
 		this.city = city;
 	}
 
-	/**
-	 * @param owner the owner to set
-	 */
-	public void setOwner(Club owner) {
-		this.owner = owner;
+	public double getLatitude() {
+		return latitude;
 	}
 
-	/**
-	 * @param operator the operator to set
-	 */
-	public void setOperator(Club operator) {
-		this.operator = operator;
+	public void setLatitude(double latitude) {
+		this.latitude = latitude;
 	}
 
-	/**
-	 * @param capacity the capacity to set
-	 */
+	public double getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(double longitude) {
+		this.longitude = longitude;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
 	public void setCapacity(int capacity) {
 		this.capacity = capacity;
 	}
-
-	/**
-	 * @param recordAttendance the recordAttendance to set
-	 */
-	public void setRecordAttendance(int recordAttendance) {
-		this.recordAttendance = recordAttendance;
-	}
-
-	/**
-	 * @param opened the opened to set
-	 */
-	public void setOpened(Date opened) {
-		this.opened = opened;
-	}
-
-
-	public static Finder<Long, Ground> find = new Finder<Long, Ground>(
-			Long.class, Ground.class
-	);
 }

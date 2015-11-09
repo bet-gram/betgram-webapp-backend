@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:/Users/scvalencia606/Documents/black-widow/betgram/betgram-webapp-backend/conf/routes
-// @DATE:Sun Nov 08 10:30:47 COT 2015
+// @DATE:Sun Nov 08 12:11:46 COT 2015
 
 package controllers;
 

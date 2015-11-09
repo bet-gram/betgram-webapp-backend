@@ -14,6 +14,7 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += "org.postgresql"%"postgresql"%"9.2-1004-jdbc41"
+libraryDependencies += "com.amazonaws" % "aws-java-sdk" % "1.3.11"
 
 // Play provides two styles of routers, one expects its actions to be injected, the
 // other, legacy style, accesses its actions statically.
