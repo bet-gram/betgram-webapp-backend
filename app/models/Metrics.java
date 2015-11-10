@@ -21,6 +21,10 @@ public class Metrics extends Model {
 
     public int weightedRetweetIndex;
 
+    public static Finder<String, Metrics> find = new Finder<String, Metrics>(
+            String.class, Metrics.class
+    );
+
     public Metrics() {
     }
 
