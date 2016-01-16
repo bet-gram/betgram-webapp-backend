@@ -5,3 +5,5 @@
 out
 .idea/
 data/rootkey.csv
+target/*
+project/*
